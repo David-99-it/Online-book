@@ -1,0 +1,427 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml"><head xmlns="http://www.w3.org/1999/xhtml">
+		<title>Document</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<style type="text/css">
+ p.hiddenParagraph { visibility:hidden } 
+ p { margin-top:0; margin-bottom:0; font-family:Calibri; color:WindowText; font-size:10pt; font-size:10pt; } 
+ p { font-family:Calibri; font-size:12pt; }  p.style_Normal { margin-top:0px; margin-bottom:13.333px; line-height:1.15; font-size:11pt; } 
+.style_Normal span { } 
+ p.style_Heading2 { margin-top:0px; margin-bottom:13.333px; line-height:1.15; margin-top:6.667px; margin-bottom:6.667px; line-height:1; font-size:18pt; font-weight:bold; font-family:Times New Roman; } 
+.style_Heading2 span { font-weight:bold; font-family:Times New Roman; } 
+ p.style_Heading3 { margin-top:0px; margin-bottom:13.333px; line-height:1.15; margin-top:16px; margin-bottom:4px; line-height:1; font-size:13pt; font-weight:bold; font-family:Arial; } 
+.style_Heading3 span { font-weight:bold; font-family:Arial; } 
+ span.style_NormalCharacter { } 
+ table.style_TableNormal { } 
+ p.style_HtmlNormal { margin-top:0px; margin-bottom:13.333px; line-height:1.15; margin-top:6.667px; margin-bottom:6.667px; line-height:1; font-size:12pt; font-family:Times New Roman; } 
+.style_HtmlNormal span { font-family:Times New Roman; } 
+ span.style_StGen0 { font-size:18pt; font-weight:bold; font-family:Times New Roman; } 
+.style_StGen0 span { font-weight:bold; font-family:Times New Roman; } 
+ span.style_StGen1 { font-size:13pt; font-weight:bold; font-family:Arial; } 
+.style_StGen1 span { font-weight:bold; font-family:Arial; } 
+ p.style_179 { margin-top:0px; margin-bottom:13.333px; line-height:1.15; margin-left:48px; } 
+ span.X3AS7TOCHyperlink { color:#000000; text-decoration:none; } 
+ p.X3AS7TABSTYLE { } 
+ span.BulletSymbol { font-family:'Symbol'; } 
+ body { margin-left:113.4px;margin-top:75.6px;margin-bottom:75.6px;margin-right:56.667px;} 
+div.basic { width:16.501cm;height:25.7cm;} 
+ p.hiddenParagraph { font-size:2pt; visibility:hidden; } 
+</style>
+		<script type="text/javascript">
+							var useragent = navigator.userAgent;
+							var navigatorname;
+							if (useragent.indexOf('MSIE')!= -1)
+							{
+							navigatorname="MSIE";
+							}
+							else if (useragent.indexOf('Gecko')!= -1)
+							{
+							if (useragent.indexOf('Chrome')!= -1)
+							navigatorname="Google Chrome";
+							else
+							navigatorname="Mozilla";
+							}
+							else if (useragent.indexOf('Mozilla')!= -1)
+							{
+							navigatorname="old Netscape or Mozilla";
+							}
+							else if (useragent.indexOf('Opera')!= -1)
+							{
+							navigatorname="Opera";
+							}
+							
+							function symbol(code1,code2)
+							{
+							if (navigatorname == 'MSIE')
+								document.write(code1);
+							else
+								document.write(code2);
+							}
+							</script>
+	</head>
+	<body xmlns="http://www.w3.org/1999/xhtml"><div class="basic"><div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; line-height:1.15; text-align:center; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Лабораторная работа №</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">9</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; line-height:1.15; text-align:center; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Тема:<span>
+						</span></span>Локальные и глобальные переменные в Microsoft Visual C++.<span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; line-height:1.15; text-align:justify; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Цель</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span>работы</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">: </span>Разработка программ с применением локальных и глобальных переменных.</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Материальное обеспечение:<span>
+						</span></span><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Компьютерное</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>оборудование</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>и программное обеспечение.</span><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; line-height:1.15; text-align:center; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Основные понятия и определения</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; text-align:justify; text-indent:1.249cm; "> Для реализации своих задач функции должны использовать переменные.<span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>Переменные бывают двух типов: локальные и глобальные.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; text-align:justify; text-indent:1.249cm; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Локальные переменные</span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>представляют собой переменные, объявляемые внутри функции. Имя и значение локальной переменной известны только функции, внутри которой переменная объявлена.<span>
+						</span></span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Необходимо</span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>объявлять локальные переменные в начале функции сразу же после первой открывающей фигурной скобки. Имена, назначаемые локальным переменным, должны быть уникальными только для функции, внутри которой эти переменные определены.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; text-align:justify; text-indent:1.249cm; ">При объявлении локальных переменных внутри функции очень вероятно, что имя локальной переменной, объявляемой в одной функции, будет таким же<span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">,</span><span><span></span>
+					</span>как и имя переменной, используемой в другой функции. Таким образом, если две функции используют одно и то же имя для своих локальных переменных, это не приводит к конфликту.<span>
+					</span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; text-indent:1.249cm; "><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; text-align:justify; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Методический пример</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span>1.<span>
+						</span></span>Данная программа использует функцию<span>
+					</span><span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">add_values</span><span><span></span>
+					</span>для сложения двух целочисленных значений. Эта функция присваивает свой результат локальной переменной<span>
+					</span><span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">value.</span><span><span></span>
+					</span>Однако в<span>
+					</span><span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">main</span><span><span></span>
+					</span>один из параметров, передаваемых в функцию, также носит имя<span>
+					</span><span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">value.</span><span><span></span>
+					</span>Поскольку C++ трактует обе переменные как локальные для соответствующих функций, их имена не конфликтуют:<span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; ">
+					<img alt="image" style="width:455px; height:206px; left:0; z-index:0; " src="labs_9_files/image1.png"></img> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Результат работы:</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal ">1001+2002=3003</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_Heading2 style_Heading2 " style="text-align:center; "><span style="font-size:12pt; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:18pt; font-weight:bold; font-size:12pt; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_Heading2 style_Heading2 " style="text-align:center; "><span style="font-size:12pt; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:18pt; font-weight:bold; font-size:12pt; ">Глобальные переменные.</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="text-align:justify; text-indent:1.249cm; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Глобальные переменные –<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">это переменные,<span>
+						</span></span><span style="font-size:12pt; font-style:italic; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">которые известны на протяжении всей программы (глобально для всех функций). Чтобы объявить глобальную переменную, следует просто поместить объявление переменной в начало программы вне какой-либо функции. </span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Все функции, которые следуют за таким объявлением, могут использовать эту глобальную переменную.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; text-indent:1.249cm; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Методический пример<span>
+						</span></span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span>2. </span>Данная программа использует глобальную переменную с именем<span>
+					</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">number</span><span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">.</span><span><span></span>
+					</span>Каждая функция в программе может использовать (или изменять) значение глобальной переменной. В данном случае каждая функция выводит текущее значение этой переменной, а затем увеличивает это значение на единицу:</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; ">
+					<img alt="image" style="width:520px; height:260px; left:0; z-index:0; " src="labs_9_files/image2.png"></img> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Результат работы программы:</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; ">Значение <span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">number</span> в<span>
+					</span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">main</span><span><span></span>
+					</span>1001</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; ">Значение<span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "> number </span>в<span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>first_change 1002</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; ">Значение<span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "> number </span>в<span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>second _change 100</span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">3</span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; text-align:justify; text-indent:1.249cm; ">Как правило, следует избегать использования в программах глобальных переменных. Поскольку любая функция может изменить значение глобальной переменной, сложно отследить все функции, которые потенциально могли бы изменить данную переменную. Вместо этого программам следует объявлять переменную внутри<span>
+					</span><span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">main</span><span><span></span>
+					</span>и затем передавать ее (как параметр) в функции, которым она нужна.<span>
+					</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_Heading3 style_Heading3 " style="text-align:center; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Arial; font-size:13pt; font-weight:bold; font-family:Times New Roman; font-size:12pt; ">Конфликт глобальных и локальных переменных</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; text-indent:1.249cm; ">По мере возможности следует избегать использования в программах глобальных переменных. Однако если программа должна использовать глобальную переменную, то может случиться, что имя глобальной переменной конфликтует с именем локальной переменной. При возникновении такого конфликта C++ предоставляет приоритет локальной переменной.<span>
+					</span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; text-indent:1.249cm; ">Однако могут быть ситуации, когда вам необходимо обратиться к глобальной переменной, чье имя конфликтует с именем локальной переменной. В таких случаях программы могут использовать<span>
+					</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">глобальный<span>
+						</span></span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">оператор<span>
+						</span></span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">разрешения</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span>С++ (::)</span>, если необходимо использовать глобальную переменную. Например, предположим, что у вас есть глобальная и локальная переменные с именем<span>
+					</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">number</span><span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">.</span><span><span></span>
+					</span>Если функция хочет использовать локальную переменную<span>
+					</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">number</span><span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">,</span><span><span></span>
+					</span>она просто обращается к этой переменной, как показано ниже:</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; ">number = 1001; // обращение к локальной переменной</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; text-indent:1.249cm; ">С другой стороны, если функция хочет обратиться к глобальной переменной, программа использует глобальный оператор разрешения, как показано ниже:</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; ">::number = 2002; // Обращение к глобальной переменной</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Методический пример<span>
+						</span></span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">3. </span>Программа использует глобальную переменную<span>
+					</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">number</span><span style="font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">.</span><span><span></span>
+					</span>В дополнение к этому функция<span>
+					</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">show_numbers</span><span><span></span>
+					</span>использует локальную переменную с именем<span>
+					</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">number.</span><span><span></span>
+					</span>Эта функция использует оператор глобального разрешения для обращения к глобальной переменной:</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal ">
+					<img alt="image" style="width:515px; height:183px; left:0; z-index:0; " src="labs_9_files/image3.png"></img><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Результат работы прогр</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">а</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">ммы:</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Локальная переменная number содержит 2002</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Глобальная переменная number содержит 1001</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Методический пример<span>
+						</span></span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">4.<span>
+						</span></span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span>Написать программу,<span>
+					</span>которая показывает обращение к переменной до<span>
+					</span>главной функции программы и внутри<span><span></span>
+					</span>функции, в результате локальная переменная должна быть равна 5, а глобальная 10<span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal ">
+					<img alt="image" style="width:525px; height:169px; left:0; z-index:0; " src="labs_9_files/image4.png"></img><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Результат работы прогр</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">а</span><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">ммы:</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Глобальная переменная<span>
+						</span></span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">10</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; "><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Локальная переменная<span>
+						</span></span><span style="font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">5</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; text-indent:1.249cm; ">Программы могут выбрать глобальную или локальную переменную с помощью глобального оператора разрешения. Использование глобальных и локальных переменных может вызвать путаницу, которая в свою очередь может привести к ошибкам. Поэтому по мере возможности избегайте использования глобальных переменных.</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_Heading3 style_Heading3 " style="margin-top:0px; margin-bottom:0px; text-align:justify; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Arial; font-size:13pt; font-weight:bold; font-family:Times New Roman; font-size:12pt; ">Представление об области видимости переменных</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_Heading3 style_Heading3 " style="margin-top:0px; margin-bottom:0px; text-align:justify; text-indent:1.249cm; "><span style="font-size:12pt; font-weight:normal; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Arial; font-size:13pt; font-weight:bold; font-family:Times New Roman; font-size:12pt; font-weight:normal; ">Область видимости</span><span style="font-size:12pt; font-weight:normal; font-style:italic; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Arial; font-size:13pt; font-weight:bold; font-family:Times New Roman; font-size:12pt; font-weight:normal; font-style:italic; ">,</span><span style="font-size:12pt; font-weight:normal; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Arial; font-size:13pt; font-weight:bold; font-family:Times New Roman; font-size:12pt; font-weight:normal; "><span><span></span>
+						</span>определяет участок в программе, где имя переменной имеет смысл (и, следовательно, используется). Для локальной переменной область видимости ограничена функцией, внутри которой эта переменная объявлена. С другой стороны, глобальные переменные известны на протяжении всей программы. В результате глобальные переменные имеют большую область видимости.</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="text-align:justify; "><span style="font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Варианты заданий:</span></p>
+			</div>
+			<p class="style_Normal style_Normal " style="margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу,<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">которая показывает о</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">бращение к переменной до<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">главной функции программы и внутри</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>функции</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, в результате локальная переменная должна быть равна 20, а глобальная 10.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу,<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">которая показывает о</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">бращение к переменной до<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">главной функции программы и внутри</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>функции</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, в результате локальная переменная должна быть равна<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">3</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">0, а глобальная<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">0.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу,<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">которая показывает о</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">бращение к переменной до<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">главной функции программы и внутри</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>функции</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, в результате локальная переменная должна быть равна 40, а глобальная 20.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу,<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">которая показывает о</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">бращение к переменной до<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">главной функции программы и внутри</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>функции</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, в результате локальная переменная должна быть равна 50, а глобальная 10.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">5.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу,<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">которая показывает о</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">бращение к переменной до<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">главной функции программы и внутри</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>функции</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, в результате локальная переменная должна быть равна 60, а глобальная 15.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">6.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу,<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">которая показывает о</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">бращение к переменной до<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">главной функции программы и внутри</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>функции</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, в результате локальная переменная должна быть равна 15, а глобальная 12.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">7.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу,<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">которая показывает о</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">бращение к переменной до<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">главной функции программы и внутри</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>функции</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, в результате локальная переменная должна быть равна 30, а глобальная 40.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:33.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">8.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу,<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">которая показывает о</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">бращение к переменной до<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">главной функции программы и внутри</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>функции</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, в результате локальная переменная должна быть равна 50, а глобальная 20.</span></p>
+			<div>
+				<p class="style_Normal style_Normal "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-left:24px; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; color:#ff0000; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">СРС</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-left:24px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Определить, есть ли среди цифр заданного ц</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">е</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">лого трёхзначного числа одинаковые.</span><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-left:24px; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-left:24px; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-left:24px; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-left:24px; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-left:24px; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Порядок выполения работы:</span></p>
+			</div>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-left:48px; text-indent:-.635cm; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Изучить теоретические сведения<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">по данной лабораторной работе.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-left:48px; text-indent:-.635cm; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Составить программу для заданного варианта</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-left:48px; text-indent:-.635cm; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Записать программу на языке<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Visual C</span><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">++</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-left:48px; text-indent:-.635cm; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Отладить программу.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-left:48px; text-indent:-.635cm; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">5.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Продемонстрировать работу программы на ПК для заданного варианта.</span></p>
+			<div>
+				<p class="style_Normal style_Normal "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Содержание отчета:</span></p>
+			</div>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-left:48px; text-indent:-.635cm; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Тем</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">а</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>и цель работы.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-left:48px; text-indent:-.635cm; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Вариант задания.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-left:48px; text-indent:-.635cm; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Листинг</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>и результат программы.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-left:48px; text-indent:-.635cm; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">К</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">онтрольные вопросы.</span></p>
+			<div>
+				<p class="style_Normal style_Normal "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Контрольные вопросы:</span></p>
+			</div>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Какие переменные называются локальными?</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Какие переменные называются глобальными?<span>
+					</span></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Конфликт</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">уют ли<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>локальны</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">е</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>и глобальны</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">е</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>переменны</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">е?</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Какой оператор необходимо использовать при конфликте глобальных и локальных переменных?</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">5.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Что такое область видимости?</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>Какая область видимости у локальной и у глобальной переменных?</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-top:0px; margin-bottom:0px; text-align:center; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-top:0px; margin-bottom:0px; text-align:center; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Литература:</span></p>
+			</div>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Хортон А.<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Visual</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>2010: полный курс.:Пер. с анг.-М.:ООО «И.Д.Вильямс», 2011г , 1216 с.: ил.<span>
+					</span></span></p>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Пахомов Б.И. С/</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">C</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">++ и<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">MS</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Visual</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">C</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">++ 2010 для начинающих. – СПб.:БХВ-Петербург, 2011.-736 с.:ил.<span>
+					</span></span></p>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Зиборов В. В. MS Visual C++ 2010 в среде.NET. Библиотека программиста. — СПб.: Питер,<span>
+					</span></span></p>
+			<div>
+				<p class="style_Normal style_Normal style_179 style_179 " style="margin-top:0px; margin-bottom:0px; margin-left:48px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2012. — 320 с.: ил.</span></p>
+			</div>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Прохоренок Н.А. Программирование на С++ в<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Visual</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Studio</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>2010<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Express</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, - СПб.: Питер, 2011г , 71 с.: ил.<span>
+					</span></span></p>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">5.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Степаненко О.Е. VisualC++.NET.Классикапрограммирования.:-М:Научнаякнига,К.;Бу-кипист,2010.—768с.</span></p></div></body>
+</html>
+ 

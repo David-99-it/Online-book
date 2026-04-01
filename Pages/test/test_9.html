@@ -1,0 +1,299 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="icon.png" />
+    
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<!-- СCS стил для оформления теска -->
+    <link href="../css/test.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Библеотека JST JQuery -->
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <!-- Мой скрипт JST -->
+    <script src="../js/myscript.js" type="text/javascript"></script>
+    
+	<title>Главная страница</title>
+</head>
+
+<body>
+
+<div id="header-block">
+
+<div id="header">
+                <a href="../index.html" title="На главную">
+  <div class="logo">
+  </div>
+</a>
+            <ul>
+             <li><a href="../lessons.html">Лекции</a></li>
+                <li><a href="../work.html">Практика</a></li>
+                <li><a href="../test.html">Тест</a></li>
+                <li><a href="../author.html">Автор</a></li>
+            </ul>
+        </div>
+    </div>
+
+<div id="block">
+    
+    <div id="center-block">
+        <div id="content">
+            <div class="content">
+               <!-- Форма для теста -->
+            <form id="idMyTest" name="MyTest" style="position: relative; z-index: 0;">
+                <ul id="ul_test_li">
+                    <p id="p-Form">Тест №9</p>
+					<!-- вопросы -->
+                    <li class="question">
+                        <p>1)Что такое  описание?</p>
+                            <ul class="radio" id="radio_1">
+                                <li style="display: none;"><input type="radio" name="joy_1" checked="" value="notAnswer_1"  /></li>
+                                <li><input id="jyrgal_1_1"  type="radio" name="joy_1" value="yes"  /></li>
+                                <li><input id="jyrgal_1_2"  type="radio" name="joy_1" value="no" /></li>
+				                <li><input id="jyrgal_1_3"  type="radio" name="joy_1" value="no" /> </li>
+				                <li><input id="jyrgal_1_4"  type="radio" name="joy_1" value="no" /> </li>
+                            </ul>
+                            <ul class="answer">
+                               <li><label for="jyrgal_1_1">а.	объявление переменной, константы с  указанием имени и типа данных;</label></li>
+                                <li><label for="jyrgal_1_2">б.	это подробное разъяснение, что делает эта строка текста программы;</label></li>
+                                <li><label for="jyrgal_1_3">в.	это дополнительная справка, к которой может иметь доступ пользователь;</label></li>
+								 <li><label for="jyrgal_1_4">г.	это строка кода пользовательских функций.</label></li>
+                            </ul>
+                    </li>
+                    
+                    <li class="question">
+                        <p>2)С помощью какого ключевого слова обозначается каждый конкретный случай при использовании оператора switch?</p>
+                            <ul class="radio" id="radio_2">
+                                <li style="display: none;"><input type="radio" name="joy_2" checked="" value="notAnswer_2"  /></li>
+                                <li><input id="jyrgal_2_1"  type="radio" name="joy_2" value="no"  /></li>
+                                <li><input id="jyrgal_2_2"  type="radio" name="joy_2" value="yes" /></li>
+								<li><input id="jyrgal_2_3"  type="radio" name="joy_2" value="no" /> </li>
+								<li><input id="jyrgal_2_4"  type="radio" name="joy_2" value="no" /> </li>
+                            </ul>
+                            <ul class="answer">
+                                <li><label for="jyrgal_2_1">а.	break;</label></li>
+                                <li><label for="jyrgal_2_2">б.	case;</label></li>
+                                <li><label for="jyrgal_2_3">в.	default;</label></li>
+								<li><label for="jyrgal_2_4">г.	if.</label></li>
+                            </ul>
+                    </li>
+                    
+                    <li class="question">
+                        <p>3)Что необходимо использовать для обращения к определенным значения хранящихся в массиве?</p>
+                            <ul class="radio" id="radio_3">
+                                <li style="display: none;"><input type="radio" name="joy_3" checked="" value="notAnswer_3"  /></li>
+                                <li><input id="jyrgal_3_1"  type="radio" name="joy_3" value="no"  /></li>
+                                <li><input id="jyrgal_3_2"  type="radio" name="joy_3" value="no" /></li>
+								<li><input id="jyrgal_3_3"  type="radio" name="joy_3" value="no" /> </li>
+								<li><input id="jyrgal_3_4"  type="radio" name="joy_3" value="yes" /> </li>
+                            </ul>
+                            <ul class="answer">
+                                <li><label for="jyrgal_3_1">а.	значение массива</label></li>
+                                <li><label for="jyrgal_3_2">б.	размерность массива</label></li>
+                                <li><label for="jyrgal_3_3">в.	имя переменной массива</label></li>
+								<li><label for="jyrgal_3_4">г.	значение индекса</label></li>
+                            </ul>
+                    </li>
+                    
+                    <li class="question">
+                        <p>4)Что делает стандартная функция      strrev(str), предназначение ее аргументов?</p>
+                            <ul class="radio" id="radio_4">
+                                <li style="display: none;"><input type="radio" name="joy_4" checked="" value="notAnswer_4"  /></li>
+                                <li><input id="jyrgal_4_1"  type="radio" name="joy_4" value="no"  /></li>
+                                <li><input id="jyrgal_4_2"  type="radio" name="joy_4" value="no" /></li>
+								<li><input id="jyrgal_4_3"  type="radio" name="joy_4" value="yes" /> </li>
+								<li><input id="jyrgal_4_4"  type="radio" name="joy_4" value="no" /> </li>
+                            </ul>
+                            <ul class="answer">
+                                <li><label for="jyrgal_4_1">а.	производит сравнение строк;</label></li>
+                                <li><label for="jyrgal_4_2">б.	определяет длину строки;</label></li>
+                                <li><label for="jyrgal_4_3">в.	представляет символы заданной строки в обратном порядке;</label></li>
+								<li><label for="jyrgal_4_4">г.	складывает одну строку с n символами другой.</label></li>
+                            </ul>
+                    </li>
+                    
+                    <li class="question">
+                        <p>5)Что необходимо использовать функции, чтобы изменить значение параметра? </p>
+                            <ul class="radio" id="radio_5">
+                                <li style="display: none;"><input type="radio" name="joy_5" checked="" value="notAnswer_5"  /></li>
+                                <li><input id="jyrgal_5_1"  type="radio" name="joy_5" value="no"  /></li>
+                                <li><input id="jyrgal_5_2"  type="radio" name="joy_5" value="no" /></li>
+								<li><input id="jyrgal_5_3"  type="radio" name="joy_5" value="yes" /> </li>
+								<li><input id="jyrgal_5_4"  type="radio" name="joy_5" value="no" /> </li>
+                            </ul>
+                            <ul class="answer">
+                                <li><label for="jyrgal_5_1"> а.	указатель;</label></li>
+                                <li><label for="jyrgal_5_2">б.	ссылки;</label></li>
+                                <li><label for="jyrgal_5_3">в.	указатели и ссылки;</label></li>
+								 <li><label for="jyrgal_5_4">г.	изменения произойдут по умолчанию.</label></li>
+                            </ul>
+                    </li>
+                    
+                    <li class="question">
+                        <p>6)В каких случаях необходимо использовать оператор глобального разрешения?</p>
+                            <ul class="radio" id="radio_6">
+                                <li style="display: none;"><input type="radio" name="joy_6" checked="" value="notAnswer_6"  /></li>
+                                <li><input id="jyrgal_6_1"  type="radio" name="joy_6" value="no"  /></li>
+                                <li><input id="jyrgal_6_2"  type="radio" name="joy_6" value="no" /></li>
+								<li><input id="jyrgal_6_3"  type="radio" name="joy_6" value="no" /> </li>
+								<li><input id="jyrgal_6_4"  type="radio" name="joy_6" value="yes" /> </li>
+                            </ul>
+                            <ul class="answer">
+                                <li><label for="jyrgal_6_1">а.	таких случаев нет;</label></li>
+                                <li><label for="jyrgal_6_2">б.	при конфликте локальных переменных;</label></li>
+                                <li><label for="jyrgal_6_3">в.	при конфликте глобальных переменных;</label></li>
+								<li><label for="jyrgal_6_4">г.	при конфликте локальных и глобальных переменных.</label></li>
+                            </ul>
+                    </li>
+					
+                    <li class="question">
+                        <p>7)Элементы структуры называются…</p>
+                            <ul class="radio" id="radio_7">
+                                <li style="display: none;"><input type="radio" name="joy_7" checked="" value="notAnswer_7"  /></li>
+                                <li><input id="jyrgal_7_1"  type="radio" name="joy_7" value="no"  /></li>
+                                <li><input id="jyrgal_7_2"  type="radio" name="joy_7" value="yes" /></li>
+								<li><input id="jyrgal_7_3"  type="radio" name="joy_7" value="no" /> </li>
+								<li><input id="jyrgal_7_4"  type="radio" name="joy_7" value="no" /> </li>
+                            </ul>
+                            <ul class="answer">
+                                <li><label for="jyrgal_7_1">а.	ячейками структуры;</label></li>
+                                <li><label for="jyrgal_7_2">б.	полями структуры;</label></li>
+                                <li><label for="jyrgal_7_3">в.	элементами структуры;</label></li>
+								<li><label for="jyrgal_7_4">г.	записями структуры.</label></li>
+                            </ul>
+                    </li>
+                    
+                    <li class="question">
+                        <p>8)Именованная структура данных, представляющая собой последовательность элементов данных одного типа, причем количество элементов последовательности практически не ограничено называется…..</p>
+                            <ul class="radio" id="radio_8">
+                                <li style="display: none;"><input type="radio" name="joy_8" checked="" value="notAnswer_8"  /></li>
+                                <li><input id="jyrgal_8_1"  type="radio" name="joy_8" value="no"  /></li>
+                                <li><input id="jyrgal_8_2"  type="radio" name="joy_8" value="yes" /></li>
+								<li><input id="jyrgal_8_3"  type="radio" name="joy_8" value="no" /> </li>
+								<li><input id="jyrgal_8_4"  type="radio" name="joy_8" value="no" /> </li>
+                            </ul>
+                            <ul class="answer">
+                                <li><label for="jyrgal_8_1"> а.	исполняемой программой;</label></li>
+                                <li><label for="jyrgal_8_2">б.	программой;</label></li>
+                                <li><label for="jyrgal_8_3">в.	файлом;</label></li>
+								<li><label for="jyrgal_8_4">г.	программным кодом.</label></li>
+                            </ul>
+                    </li>
+                    
+                    <li class="question">
+                        <p>9)Имеется фрагмент программы:<br>
+int main()<br>
+{<br>
+int  a=3, b=5, c=7;<br>
+a=b; b=a; c=c+1;<br>
+ cout<<"a= "<<a;<br>
+ cout<<"b= "<<b;<br>
+  cout<<"c= "<<c;<br>
+ system("PAUSE");<br>
+return 0;<br>
+} <br>
+Какой будет результат?</br>
+</p>
+                            <ul class="radio" id="radio_9">
+                                <li style="display: none;"><input type="radio" name="joy_9" checked="" value="notAnswer_9"  /></li>
+                                <li><input id="jyrgal_9_1"  type="radio" name="joy_9" value="yes"  /></li>
+                                <li><input id="jyrgal_9_2"  type="radio" name="joy_9" value="no" /></li>
+								<li><input id="jyrgal_9_3"  type="radio" name="joy_9" value="no" /> </li>
+								<li><input id="jyrgal_9_4"  type="radio" name="joy_9" value="no" /> </li>
+                            </ul>
+                            <ul class="answer">
+                                <li><label for="jyrgal_9_1"> а.	a=5   b=5     c=8;</label></li>
+                                <li><label for="jyrgal_9_2">б.	а=5   b=5     c=5;</label></li>
+                                <li><label for="jyrgal_9_3">в.	a=5   b=8     c=5;</label></li>
+								<li><label for="jyrgal_9_4">г.	a=5   b=3     c=8.</label></li>
+                            </ul>
+                    </li>
+
+					<li class="question">
+                        <p>10)Найдите ошибки в программе: <br>
+#include <iostream> <br>
+#include <string.h> <br>
+using namespace std;<br>
+int main() <br>
+{<br>
+char [15]="programa";<br>
+char [15 ]="institute";<br>
+char *sptr;<br>
+char *sptr1;<br>
+sptr=strchr(str1, 'o');<br>
+sptr1=strrchr(str2, 'i');<br>
+cout<<sptr<<endl;<br>
+cout<<sptr1;<br>
+system("PAUSE"); <br>
+return 0;	<br>
+}<br>
+Результат программы:<br>
+ogramma      itute</br> </p>
+                            <ul class="radio" id="radio_10">
+                                <li style="display: none;"><input type="radio" name="joy_10" checked="" value="notAnswer_10"  /></li>
+                                <li><input id="jyrgal_10_1"  type="radio" name="joy_10" value="no"  /></li>
+                                <li><input id="jyrgal_10_2"  type="radio" name="joy_10" value="no" /></li>
+								<li><input id="jyrgal_10_3"  type="radio" name="joy_10" value="yes" /> </li>
+								<li><input id="jyrgal_10_4"  type="radio" name="joy_10" value="no" /> </li>
+                            </ul>
+                            <ul class="answer">
+                                <li><label for="jyrgal_10_1">а.	неправильно записаны функции работы со строками;</label></li>
+                                <li><label for="jyrgal_10_2">б.	есть синтаксические ошибки;</label></li>
+                                <li><label for="jyrgal_10_3">в.	неправильно объявлены переменные;</label></li>
+								<li><label for="jyrgal_10_4">г.	неправильно показан результат программы.</label></li>
+                            </ul>
+                    </li>
+                 <div class="clear_both"></div>
+					
+                </ul>
+                
+                <input type="button" id="answerFinishId" name="answerFinish" value="Готово!" />
+                
+            </form>
+			
+	<div id="ViewBackId">
+    <p>Вы не ответили на вопросы!</p>
+    <a id="testAgane" href="test_9.html">Перейти к тесту</a>
+    </div>
+    
+    <div id="MessDivYes">
+    <table>
+        <p id="goodFinish"></p>
+        <tr><td id="questionTable">Вапросы</td><td id="answerTable">Ваш ответ</td></tr>
+    
+        <tr><td class="questionTable">Ответ на 1 - вопрос</td><td id="sms_1" class="answerTable">Вы не ответили на 1 вапрос!</td></tr>
+        <tr><td class="questionTable">Ответ на 2 - вопрос</td><td id="sms_2" class="answerTable">Вы не ответили на 2 вапрос!</td></tr>
+        <tr><td class="questionTable">Ответ на 3 - вопрос</td><td id="sms_3" class="answerTable">Вы не ответили на 3 вапрос!</td></tr>
+        <tr><td class="questionTable">Ответ на 4 - вопрос</td><td id="sms_4" class="answerTable">Вы не ответили на 4 вапрос!</td></tr>
+        <tr><td class="questionTable">Ответ на 5 - вопрос</td><td id="sms_5" class="answerTable">Вы не ответили на 5 вапрос!</td></tr>
+        
+        <tr><td class="questionTable">Ответ на 6 - вопрос</td><td id="sms_6" class="answerTable">Вы не ответили на 6 вапрос!</td></tr>
+        <tr><td class="questionTable">Ответ на 7 - вопрос</td><td id="sms_7" class="answerTable">Вы не ответили на 7 вапрос!</td></tr>
+        <tr><td class="questionTable">Ответ на 8 - вопрос</td><td id="sms_8" class="answerTable">Вы не ответили на 8 вапрос!</td></tr>
+        <tr><td class="questionTable">Ответ на 9 - вопрос</td><td id="sms_9" class="answerTable">Вы не ответили на 9 вапрос!</td></tr>
+		<tr><td class="questionTable">Ответ на 10 - вопрос</td><td id="sms_10" class="answerTable">Вы не ответили на 10 вапрос!</td></tr>
+        
+    </table>
+    
+    <a id="testAgane" href="../test.html">Перейти к тесту</a>
+    </div>
+    
+    
+<div class="clear_both"></div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <div class="clear_both"></div>
+    
+</div>
+
+    <div id="footer-block">
+        <div id="footer"></div>
+    </div>
+
+</body>
+</html>

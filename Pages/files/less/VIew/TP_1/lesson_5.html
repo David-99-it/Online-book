@@ -1,0 +1,790 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml"><head xmlns="http://www.w3.org/1999/xhtml">
+		<title>Document</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<style type="text/css">
+ p.hiddenParagraph { visibility:hidden } 
+ p { margin-top:0; margin-bottom:0; font-family:Calibri; font-size:11pt; margin-bottom:13.333px; color:WindowText; } 
+ p { font-family:Calibri; font-size:11pt; font-family:Calibri;  }  p.style_a { font-family:Calibri; } 
+.style_a span { font-family:Calibri; } 
+ p.style_2 { outline-width:2; margin-top:16px; margin-bottom:4px; font-size:14pt; font-family:Arial; font-weight:bold; font-style:italic; } 
+.style_2 span { font-family:Arial; font-weight:bold; font-style:italic; } 
+ span.style_a0 { } 
+ table.style_a1 { } 
+ span.style_20 { font-size:14pt; font-family:Arial; font-weight:bold; font-style:italic; } 
+.style_20 span { font-family:Arial; font-weight:bold; font-style:italic; } 
+ p.style_a3 { margin-left:48px; } 
+ p.style_a4 { margin-top:6.667px; margin-bottom:6.667px; line-height:1; font-size:12pt; } 
+.style_a4 span { } 
+ p.style_a5 { margin-top:0px; margin-bottom:0px; line-height:1; } 
+ span.style_a6 { font-family:Calibri; } 
+.style_a6 span { font-family:Calibri; } 
+ p.style_a7 { margin-top:0px; margin-bottom:0px; line-height:1; } 
+ span.style_a8 { font-family:Calibri; } 
+.style_a8 span { font-family:Calibri; } 
+ span.X3AS7TOCHyperlink { color:#000000; text-decoration:none; } 
+ p.X3AS7TABSTYLE { } 
+ span.BulletSymbol { font-family:'Symbol'; } 
+ body { margin-left:113.4px;margin-top:75.6px;margin-bottom:75.6px;margin-right:56.667px;} 
+div.basic { width:16.501cm;height:25.7cm;} 
+ p.hiddenParagraph { font-size:2pt; visibility:hidden; } 
+</style>
+		<script type="text/javascript">
+							var useragent = navigator.userAgent;
+							var navigatorname;
+							if (useragent.indexOf('MSIE')!= -1)
+							{
+							navigatorname="MSIE";
+							}
+							else if (useragent.indexOf('Gecko')!= -1)
+							{
+							if (useragent.indexOf('Chrome')!= -1)
+							navigatorname="Google Chrome";
+							else
+							navigatorname="Mozilla";
+							}
+							else if (useragent.indexOf('Mozilla')!= -1)
+							{
+							navigatorname="old Netscape or Mozilla";
+							}
+							else if (useragent.indexOf('Opera')!= -1)
+							{
+							navigatorname="Opera";
+							}
+							
+							function symbol(code1,code2)
+							{
+							if (navigatorname == 'MSIE')
+								document.write(code1);
+							else
+								document.write(code2);
+							}
+							</script>
+	</head>
+	<body xmlns="http://www.w3.org/1999/xhtml"><div class="basic"><div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:center; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Лекция №<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">5<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">(2ч)</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:center; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "> Тема:<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-style:italic; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-style:italic; ">Стандартные функции работы со строками.</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">
+					</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Цель лекции:</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">
+					</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Изучить</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">основные принципыф работы со строками</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Рассматриваемые вопросы:</span></p>
+			</div>
+			<p style="margin-left:71.6px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:71.6px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Представление строк в С++.</span></p>
+			<p style="margin-left:71.6px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:71.6px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Стандартные функции работы со строками.</span></p>
+			<div>
+				<p class="style_a style_a style_a4 style_a4 " style="background-color:#FFFFFF; margin-top:8px; margin-bottom:0px; line-height:1.15; margin-left:71.6px; "><span style="font-family:Times New Roman; font-weight:bold; color:#252525; font-family:Calibri; font-size:11pt; font-family:Calibri; font-size:12pt; font-family:Times New Roman; font-weight:bold; "> Глоссарий</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:justify; text-indent:1.249cm; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">В </span><a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5"><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">программировании</span></a><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, </span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">строковый тип</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "> (</span><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA"><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">англ.</span></a><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "> string «нить, вереница») — </span><a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BF_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">тип данных</span></a><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, значениями которого является произвольная последовательность (строка) символов </span><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82_(%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)"><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">алфавита</span></a><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">. Каждая переменная такого типа (строковая переменная) может быть представлена фиксированным количеством </span><a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82"><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">байтов</span></a><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "> либо иметь произвольную длину.</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:justify; text-indent:1.249cm; "> </p>
+			</div>
+			<p style="margin-left:71.6px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; text-align:center; margin-left:71.6px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; text-align:center; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-weight:bold; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Представление строк в С++.</span></p>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:justify; text-indent:1.249cm; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Для представления строковых данных на языке С++ используются переменные типа<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>и заголовочный файл</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>&lt;</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">string.h</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">&gt;. Строка представляет собой массив символов, заканчивающийся нуль – символом, что означает конец этой строки. </span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:justify; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Например. </span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">[10]=”</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Vista</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">”;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span style="mso-tab-count:1">  </span>В этом примере под строку выделяется 10 байт, 5 из которых занято под символы строки, а шестой – под нуль</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">- символ. Если строка при определении инициализируется, ее размерность можно опускать (компилятор сам выделит соответствующее количество байт)</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">[]= “</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Vista</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">”; // выделено и заполнено 6 байт</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:center; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">2.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Стандартные функции работы со строками.</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strlen</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span>(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">)</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>– подсчитывает количество символов в строке.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Пример.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">int</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">x</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">;<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">=”Пробная строка”;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">x</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">=</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strlen</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">);<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strcpy</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">1,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">2)<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">–<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">копирует</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">одну</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">строку</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">в</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">другую</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">В качестве исходной строки можно использовать тип данных<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">const</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">. Копирует из строки<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">2<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">в строку</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">1.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">И результат возвращает в<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">1.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Пример<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1[15]=”Первая строка”;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str2[15];</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strcpy(str2, str1);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">&lt;&lt;</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2; //</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">первая</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">строка</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">3.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strncpy</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">1,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">2</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">int</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">n</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">) –<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">копирует указанное количество символов из одной строки в другую.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Функция копирует не более<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">n</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "> символов из<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">2<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>в<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">1</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>и возвращает в<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">1</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">пример</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">:<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strncpy (str2, str1, 5);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str2; //<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">перва</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">4. </span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strcat</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">1,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">2)</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>- </span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">объединяет</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">
+					</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">строк</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>(</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">конкатенация</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">).<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Функция добавляет<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2 к<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1 и возвращает результат в<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str1[15]=”</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Первая</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">строка</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">”;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str3[50];</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strncpy(str3, str1</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, 6</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strcat(str3,str1);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">&lt;&lt;</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">3; //<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">первая</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>+</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">первая</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">строка</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">5.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strncat</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">1,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">2,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">int</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">n</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">) –<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">складывает</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">одну</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">строку</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">с</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">n</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">символами</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">другой</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">. </span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Функция добавляет не более<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">n</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "> символов из<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2 к<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1 и возвращает в<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strncpy</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">3,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1, 6);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strncat</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">3,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1,8);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">&lt;&lt;</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">3; // первая первая с</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">6</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strlwr</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">)</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>-преобразовывает символы верхнего регистра в символы нижнего регистра. Указывает на строки и возвращает указатель на эту строку.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Пример</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strlwr</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">&lt;&lt;</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">7</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strupr</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">1)</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>– преобразует символы нижнего регистра в символы верхнего регистра. Указывает на строки и возвращает указатель на эту строку.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Пример</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strupr</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">&lt;&lt;</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">8</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strrev</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">)</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>представляет символы заданной строки в обратном порядке (переворачивает) и возвращает указатель на эту строку.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Пример</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strrev</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">&lt;&lt;</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">9</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strchr</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">c</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">)</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>– эта функция предназначена для поиска символов в строке. Эта функция возвращает указатель на первое вхождение символа<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">с</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "> в строку<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, а если его нет, то возвращается<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">null</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">. </span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">пример</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">с</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">har</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>*</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">sptr</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">sptr</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">=</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strchr</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1,’</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">p</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">’);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">&lt;&lt;</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">sptr</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">; //<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">рока</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">10</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">strrchr</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">(</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">,<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">c</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">) –<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">ищет</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">символ</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">в</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">строке</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Определяет последнее вхождение символа</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">в заданной строке и возвращает указатель на этот символ. Если этот символ не обнаружен в заданной строке, то возвращает 0.<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Пример</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char *sptr;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">sptr=strrchr(str2,’o’);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">&lt;&lt;</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">sptr</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">; //<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">овая</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Пример</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span>1. </span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Написать программу, которая производит со строками следующие действия:</span></p>
+			</div>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">В</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">ычислить длину первой строчки</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.</span></p>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">П</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">роизвести<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">копирование первой строки в третью.</span></p>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Произвести</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>объединение 2 и 3 строк.</span></p>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">#include &lt;iostream&gt;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">#include &lt;string.h&gt;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">int main()</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">{</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">setlocale(LC_ALL,"Russian");</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span style="mso-tab-count:1">  </span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">using namespace std;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str1[40]="Это первая строка";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str2[40]="Это вторая строка";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str3[40]="Это третья строка";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">int kol_symbol=0;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">kol_symbol=strlen(str1); // вычисляем длину первой строчки</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strcpy(str3,str1); // копируем первую строку в третью</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strcat(str3,str2); //добавляем к третьей строчки вторую</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str1&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str2&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str3&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;kol_symbol&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">system("PAUSE");<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">return 0;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">}</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Результат<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Это первая строка</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Это вторая строка</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Это первая строка Это вторая строка</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">17</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Пример</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span>2</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Написать программу, которая производит со строками следующие действия:</span></p>
+			</div>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">П</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">роизвести копирование первой строчки в третью</span></p>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">П</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">роизвести добавление 7 символов второй строки к третьей</span></p>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">С</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">имволы четвертой строки перевернуть в обратном порядке.<span>
+					</span></span></p>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">#include &lt;iostream&gt;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">#include &lt;string.h&gt;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">int main()</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">{</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">setlocale(LC_ALL,"Russian");</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span style="mso-tab-count:1">  </span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">using namespace std;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str1[25]="</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Строка</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str2[25]="</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Строка</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str3[50]="</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Строка</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">3";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str4[20]="</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Строка</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strcpy(str3,str1);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strncat(str3,str2,7);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strrev(str4);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str1&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str2&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str3&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str4&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>system</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">("</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">PAUSE</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">");<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">return 0;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">}</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Результат<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Строка1</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Строка2</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Строка1Строка2</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">акорт</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">С</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Пример<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">3</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">. </span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">В символьной строке необходимо найти первое вхождение и последнее вхождение букв.</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">#include &lt;iostream&gt;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">#include &lt;string.h&gt;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">int main()</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">{</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">setlocale(LC_ALL,"Russian");</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span style="mso-tab-count:1">  </span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">using namespace std;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str1[15]="programa";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str2[15 ]="institute";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char *sptr;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char *sptr1;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">sptr=strchr(str1, 'o');</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">sptr1=strrchr(str2, 'i');</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;sptr&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;sptr1&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">system("PAUSE");<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">return</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>0;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">}</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Результат</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">программы</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">:</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">o</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">gram</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">m</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">a</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; color:#000000; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">i</span><span style="font-size:12pt; font-family:Times New Roman; color:#000000; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">tute</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Пример<span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">4</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">. Написать программу, которая производит следующие действия со строками:</span></p>
+			</div>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Вычисляет длину второй строчки</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">;</span></p>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Копирует из первой сроки в третью 6 символо;</span></p>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Объединение строк<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1 и<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">str</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2.</span></p>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Переводит символы четвертой строки их нижнего регистра в верхний регистр.</span></p>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">#include &lt;iostream&gt;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">#include &lt;string.h&gt;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">int main()</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">{</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">setlocale(LC_ALL,"Russian");</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span style="mso-tab-count:1">  </span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">using namespace std;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str1[25]="STROKA";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str2[25]="stroka1";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str3[50]="stroka2";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">char str4[20]="pvt";</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">int kol_symbol=0;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">kol_symbol=strlen(str2);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strncpy(str3,str1,6);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strcat(str1,str2);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">strupr(str4);</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str1&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str2&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str3&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;str4&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">cout&lt;&lt;kol_symbol&lt;&lt;endl;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">system("PAUSE");<span>
+						</span></span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">return 0;</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">}</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Результат</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">программы</span><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">:</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">STROKAstroka1</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Stroka</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">1</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">STROKA</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">PVT</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">7</span></p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:center; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Контрольные вопросы:</span></p>
+			</div>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Какой заголовочный файл используется для представления строковых данных в С++?</span></p>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Что представляет собой строка?</span></p>
+			<p style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Назовите функции работы со строками.</span></p>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:center; "> </p>
+			</div>
+			<p class="style_a style_a style_2 style_2 " style="text-align:center; outline-width:2; " xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" text:is-list-header="true"> </p>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; text-align:center; "><span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Литература:</span></p>
+			</div>
+			<p class="style_a style_a style_a3 style_a3 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">Хортон А.<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">Visual</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>2010: полный курс.:Пер. с анг.-М.:ООО «И.Д.Вильямс», 2011г , 1216 с.: ил.<span>
+					</span></span></p>
+			<p class="style_a style_a style_a3 style_a3 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">Пахомов Б.И. С/</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">C</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">++ и<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">MS</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">Visual</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">C</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">++ 2010 для начинающих. – СПб.:БХВ-Петербург, 2011.-736 с.:ил.<span>
+					</span></span></p>
+			<p class="style_a style_a style_a3 style_a3 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">Зиборов В. В. MS Visual C++ 2010 в среде.NET. Библиотека программиста. — СПб.: Питер,<span>
+					</span></span></p>
+			<div>
+				<p class="style_a style_a style_a3 style_a3 " style="margin-top:0px; margin-bottom:0px; margin-left:48px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Calibri; font-family:Times New Roman; font-size:12pt; ">2012. — 320 с.: ил.</span></p>
+			</div>
+			<hr/>"
+      <div>
+				<p style="margin-top:0px; margin-bottom:0px; line-height:1; ">
+					<a name="ftn0" href="#ftnref0"></a> </p>
+			</div>
+			<div>
+				<p style="margin-top:0px; margin-bottom:0px; line-height:1; ">
+					<a name="ftn1" href="#ftnref1"></a> </p>
+			</div></div></body>
+</html>
+ 

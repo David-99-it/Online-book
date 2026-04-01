@@ -1,0 +1,250 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml"><head xmlns="http://www.w3.org/1999/xhtml">
+		<title>Document</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<style type="text/css">
+ p.hiddenParagraph { visibility:hidden } 
+ p { margin-top:0; margin-bottom:0; font-family:Times New Roman; color:WindowText; font-size:10pt; font-size:10pt; } 
+ p { font-family:Times New Roman; font-size:12pt; }  p.style_Normal { margin-top:0px; margin-bottom:13.333px; line-height:1.15; font-size:11pt; font-family:Calibri; } 
+.style_Normal span { font-family:Calibri; } 
+ p.style_Heading2 { margin-top:0px; margin-bottom:13.333px; line-height:1.15; margin-top:6.667px; margin-bottom:6.667px; line-height:1; font-size:18pt; font-weight:bold; font-family:Times New Roman; } 
+.style_Heading2 span { font-weight:bold; font-family:Times New Roman; } 
+ p.style_Heading3 { margin-top:0px; margin-bottom:13.333px; line-height:1.15; margin-top:16px; margin-bottom:4px; line-height:1; font-size:13pt; font-weight:bold; font-family:Arial; } 
+.style_Heading3 span { font-weight:bold; font-family:Arial; } 
+ span.style_NormalCharacter { } 
+ table.style_TableNormal { } 
+ p.style_HtmlNormal { margin-top:0px; margin-bottom:13.333px; line-height:1.15; margin-top:6.667px; margin-bottom:6.667px; line-height:1; font-size:12pt; font-family:Times New Roman; } 
+.style_HtmlNormal span { font-family:Times New Roman; } 
+ span.style_StGen0 { font-size:18pt; font-weight:bold; } 
+.style_StGen0 span { font-weight:bold; } 
+ span.style_StGen1 { font-size:13pt; font-weight:bold; font-family:Arial; } 
+.style_StGen1 span { font-weight:bold; font-family:Arial; } 
+ p.style_179 { margin-top:0px; margin-bottom:13.333px; line-height:1.15; margin-left:48px; } 
+ span.X3AS7TOCHyperlink { color:#000000; text-decoration:none; } 
+ p.X3AS7TABSTYLE { } 
+ span.BulletSymbol { font-family:'Symbol'; } 
+ body { margin-left:113.4px;margin-top:28.4px;margin-bottom:75.6px;margin-right:56.667px;} 
+div.basic { width:16.501cm;height:26.949cm;} 
+ p.hiddenParagraph { font-size:2pt; visibility:hidden; } 
+</style>
+		<script type="text/javascript">
+							var useragent = navigator.userAgent;
+							var navigatorname;
+							if (useragent.indexOf('MSIE')!= -1)
+							{
+							navigatorname="MSIE";
+							}
+							else if (useragent.indexOf('Gecko')!= -1)
+							{
+							if (useragent.indexOf('Chrome')!= -1)
+							navigatorname="Google Chrome";
+							else
+							navigatorname="Mozilla";
+							}
+							else if (useragent.indexOf('Mozilla')!= -1)
+							{
+							navigatorname="old Netscape or Mozilla";
+							}
+							else if (useragent.indexOf('Opera')!= -1)
+							{
+							navigatorname="Opera";
+							}
+							
+							function symbol(code1,code2)
+							{
+							if (navigatorname == 'MSIE')
+								document.write(code1);
+							else
+								document.write(code2);
+							}
+							</script>
+	</head>
+	<body xmlns="http://www.w3.org/1999/xhtml"><div class="basic"><div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="line-height:1.5; text-align:center; "><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Лабораторная работа №<span>
+						</span></span><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">8</span><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="line-height:1.5; text-align:center; "><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Программирование с применением перегрузки функций</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="line-height:1.5; text-align:center; "><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Цель</span><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span>работы</span><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">: </span>Разработка программ с применением перегрузки функций и значений параметров по умолчанию.</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="line-height:1.5; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Материальное обеспечение:<span>
+						</span></span><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "><span><span></span>
+						</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Компьютерное</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>оборудование</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>и программное обеспечение.</span><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-top:0px; margin-bottom:0px; line-height:1; text-align:center; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Краткие теоретические сведения</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; line-height:1.5; text-align:justify; text-indent:1.249cm; ">Часто бывает удобно, чтобы функции, реализующие один и тот же алгоритм для различных типов данных, имели одно и то же имя. Использование нескольких функций с одним и тем же именем, но с различными типами параметров, называется<span>
+					</span><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">перегрузкой функций</span>. Компилятор определяет, какую именно функцию требуется вызвать, по типу фактических параметров. Перегрузка функций позволяет программам определять несколько функций с одним и тем же именем и типом возвращаемого значения. В процессе компиляции C++ принимает во внимание количество аргументов, используемых каждой функцией, и затем вызывает именно требуемую функцию. Перегрузка функций достаточно удобна и упрощает работу программ.<span><span></span>
+					</span>Одним из наиболее общих случаев использования перегрузки является применение функции для получения определенного результата, исходя из различных параметров.<span>
+					</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_Heading2 style_Heading2 " style="margin-top:0px; margin-bottom:0px; line-height:1.5; text-align:center; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:18pt; font-weight:bold; font-size:12pt; ">Использование значений</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:18pt; font-weight:bold; font-size:12pt; "><span><span></span>
+						</span>параметров по умолчанию</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:18pt; font-weight:bold; font-size:12pt; ">.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:18pt; font-weight:bold; font-size:12pt; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; line-height:1.5; text-indent:1.249cm; ">C++ позволяет с помощью параметров передавать информацию в функции. Также C++ обеспечивает перегрузку функций, предусматривая определения, содержащие разное количество параметров или даже параметры разных типов. Кроме этого, в C++ при вызове функций можно опускать параметры. В таких случаях для опущенных параметров будут использоваться значения по умолчанию. Обеспечение значений по умолчанию для параметров упрощает возможность<span>
+					</span><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">повторного использования</span><span><span></span>
+					</span>функций.</p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="line-height:1.5; text-indent:1.249cm; ">Чтобы обеспечить значения по умолчанию для параметров функции необходимо просто присвоить значение параметру с помощью оператора присваивания прямо при объявлении функции.<span><span></span>
+					</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="line-height:1.5; ">
+					<span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Задание значений по умолчанию</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="line-height:1.5; text-indent:1.249cm; "><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Когда определяете функцию, C++ позволяет вам указать значения по умолчанию для одного или нескольких параметров. Если программа в дальнейших вызовах этой функции опускает один или несколько параметров, то функция будет использовать для них значения по умолчанию. Чтобы присвоить параметру значение по умолчанию, просто используйте оператор присваиван</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">ия внутри определения функции.<span>
+						</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Когда программа опускает один параметр, она должна опускать все последующие параметры.</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_Heading2 style_Heading2 " style="margin-top:0px; margin-bottom:0px; line-height:1.5; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:18pt; font-weight:bold; font-size:12pt; ">Методический пример:</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:18pt; font-weight:bold; font-size:12pt; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; line-height:1.5; "><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу, которая, используя перегрузку функций, вычисляет среднее значение<span>
+						</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">трех<span>
+						</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">и<span>
+						</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">четырех<span>
+						</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+						</span>переменных.</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="line-height:1.5; ">
+					<img alt="image" style="width:619px; height:364px; left:0; z-index:0; " src="labs_8_files/image1.png"></img><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; line-height:1.5; "><span style="font-weight:bold; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Варианты заданий:</span></p>
+			</div>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-weight:bold; padding-right:20px;">1.</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать прогр</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">амму, которая, используя перегрузку функций, вычисляет среднее значение<span>
+					</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">двух</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>и<span>
+					</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">трех<span>
+					</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">переменных.</span></p>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-weight:bold; padding-right:20px;">2.</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу, которая, используя перегрузку функций, вычисляет сумму двух и трех переменных.</span></p>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-weight:bold; padding-right:20px;">3.</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу, которая, используя перегрузку функций, вычисляет сумму трех и четырех переменных.</span></p>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-weight:bold; padding-right:20px;">4.</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу, которая, используя перегрузку функций, вычисляет умножение двух и трех переменных.</span></p>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-weight:bold; padding-right:20px;">5.</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу, которая, используя перегрузку функций, вычисляет умножение трех и четырех переменных.</span></p>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-weight:bold; padding-right:20px;">6.</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу, которая, используя перегрузку функций, вычисляет<span>
+					</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">деление</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>двух и трех переменных.</span></p>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-weight:bold; padding-right:20px;">7.</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу, которая, используя перегрузку функций, вычисляет<span>
+					</span></span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">деление</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>трех и четырех переменных.</span></p>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-weight:bold; padding-right:20px;">8.</span><span style="font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Написать программу, которая, используя перегрузку функций, вычисляет среднее значение двух и четырех переменных.</span></p>
+			<div>
+				<p class="style_Normal style_Normal " style="line-height:1.5; margin-left:24px; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; color:#ff0000; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">СРС</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal "><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Выполнить практическое задание:</span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-top:0px; margin-bottom:0px; ">Написать программу, которая присваивает значения по умолчанию заданной функции. Если внутри этой функции имеются 3 переменные с конкретными значениями. (Допустим, значения по умолчанию равны: x=10, y=15, z=25). Данная функция должна вызываться 3 раза.<span>
+					</span></p>
+			</div>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:72px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:28.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-family:Wingdings; padding-right:20px;">ü</span>В первом случае она должна передавать первый и второй параметр.<span>
+				</span></p>
+			<p class="style_Normal style_Normal style_HtmlNormal style_HtmlNormal " style="margin-left:72px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; margin-left:28.467px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; ">
+				<span style="font-family:Wingdings; padding-right:20px;">ü</span>Во втором не передавать ни один параметр.<span>
+				</span></p>
+			<div>
+				<p class="style_Normal style_Normal " style="line-height:1.5; margin-left:24px; "><span style="font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; ">И в третьем случае передавать все 3 пар</span><span style="font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; ">а</span><span style="font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; ">метра.</span><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="line-height:1.5; margin-left:24px; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Порядок выполения работы:</span></p>
+			</div>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Изучить теоретические сведения<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">по данной лабораторной работе.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Составить программу для заданного варианта</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Записать программу на языке<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Visual C</span><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">++</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Отладить программу.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">5.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Продемонстрировать работу программы на ПК для заданного варианта.</span></p>
+			<div>
+				<p class="style_Normal style_Normal " style="line-height:1.5; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Содержание отчета:</span></p>
+			</div>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Тем</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">а</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>и цель работы.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Вариант задания.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Листинг</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>и результат программы.</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; line-height:1.5; margin-left:48px; text-indent:-.635cm; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">К</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">онтрольные вопросы.</span></p>
+			<div>
+				<p class="style_Normal style_Normal " style="line-height:1.5; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Контрольные вопросы:</span></p>
+			</div>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Для чего необходима перезагрузка функций?</span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-weight:bold; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Перегрузка функций упрощает или усложняет программирование?<span>
+					</span></span><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Перезагруженные<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">функции должны возвращать значения одинакового или разного типа?</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span></p>
+			<p class="style_Normal style_Normal " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; font-weight:bold; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Если программа опускает значения параметров при вызове функции, то какие значения необходимо использовать?</span></p>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-top:0px; margin-bottom:0px; line-height:1.5; text-align:center; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-top:0px; margin-bottom:0px; line-height:1.5; text-align:center; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; "></span> </p>
+			</div>
+			<div>
+				<p class="style_Normal style_Normal " style="margin-top:0px; margin-bottom:0px; line-height:1.5; text-align:center; "><span style="font-size:12pt; font-weight:bold; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; font-weight:bold; ">Литература:</span></p>
+			</div>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">1.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Хортон А.<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Visual</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>2010: полный курс.:Пер. с анг.-М.:ООО «И.Д.Вильямс», 2011г , 1216 с.: ил.<span>
+					</span></span></p>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">2.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Пахомов Б.И. С/</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">C</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">++ и<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">MS</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Visual</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">C</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">++ 2010 для начинающих. – СПб.:БХВ-Петербург, 2011.-736 с.:ил.<span>
+					</span></span></p>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">3.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Зиборов В. В. MS Visual C++ 2010 в среде.NET. Библиотека программиста. — СПб.: Питер,<span>
+					</span></span></p>
+			<div>
+				<p class="style_Normal style_Normal style_179 style_179 " style="margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">2012. — 320 с.: ил.</span></p>
+			</div>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">4.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Прохоренок Н.А. Программирование на С++ в<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Visual</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Studio</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "><span><span></span>
+					</span>2010<span>
+					</span></span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Express</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">, - СПб.: Питер, 2011г , 71 с.: ил.<span>
+					</span></span></p>
+			<p class="style_Normal style_Normal style_179 style_179 " style="margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; margin-left:48px; text-indent:-.635cm; margin-top:0px; margin-bottom:0px; line-height:1.5; ">
+				<span style="font-size:12pt; font-family:Times New Roman; padding-right:20px;">5.</span><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; ">Степаненко О.Е. VisualC++.NET.Классикапрограммирования.:-М:Научнаякнига,К.;Бу-кипист,2010.—768с.</span></p>
+			<div>
+				<p class="style_Normal style_Normal " style="line-height:1.5; "><span style="font-size:12pt; font-family:Times New Roman; font-family:Times New Roman; font-family:Calibri; font-size:11pt; font-family:Times New Roman; font-size:12pt; "></span> </p>
+			</div></div></body>
+</html>
+ 

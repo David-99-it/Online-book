@@ -63,13 +63,14 @@ p.dow_ppt > a:hover{
     margin-left: 200px;
     
 }
-.logo{
+.logo {
     position: absolute;
     width: 96px;
     height: 80px;
     margin-left: 15px;
     margin-top: 20px;
-    background: url('../images/logo.jpg');
+    background: url('../images/logo.png') no-repeat;
+    background-size: contain;
 }
 /*������ ��� ���� ����*/
 #header-block{

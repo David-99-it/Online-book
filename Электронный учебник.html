@@ -1,94 +1,218 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html" />
     <meta charset="utf-8" />
-	<meta name="author" content="Boskunchiev David" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Boskunchiev David" />
     <link rel="shortcut icon" href="ico.png" />
+    <title>Backend Разработка — Главная</title>
+    
+    <!-- Google Fonts для красоты -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #020617;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent-blue: #3b82f6;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
 
-    <link href="Pages/css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="Pages/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="Pages/css/style.css" rel="stylesheet" type="text/css" />
-    <script src="Pages/js/bootstrap.js"></script>
-    <script src="Pages/js/bootstrap.min.js"></script>
+        body {
+            margin: 0;
+            font-family: 'Inter', "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #0f172a, var(--bg-color));
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
 
+        /* Шапка и Навигация */
+        header {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #334155;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-    <link href="Pages/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="Pages/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-	<title>Главная страница</title>
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Контент */
+        main {
+            padding: 60px 0;
+        }
+
+        .hero-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid #334155;
+            border-radius: 24px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .hero-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+
+        .hero-text h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            background: linear-gradient(90deg, #fff, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .syllabus-section {
+            text-align: center;
+        }
+
+        .syllabus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .syllabus-link {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .syllabus-link:hover {
+            background: var(--accent-blue);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .hero-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                display: none; /* Для мобилок лучше сделать бургер-меню */
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="header-block">
-        <div id="header">
-            <div id="header">
-                <a href="Pages/index.html" title="На главную">
-                  <div class="logo">
-                  </div>
-                </a>
-            <ul>
-
-                <li><a href="Pages/lessons.html">Лекции</a></li>
-                <li><a href="Pages/work.html">Практика</a></li>
-                <li><a href="Pages/test.html">Тест</a></li>
-
-                <li><a href="Pages/presentation.html">Презентации</a></li>
-                <li><a href="Pages/video.html">Видео урок</a></li>
-                <li><a href="Pages/author.html">Авторы</a></li>
-            </ul>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="Электронный учебник.html"logo">🚀 DevBackend</a>
+                <ul>
+                    <li><a href="Pages/lessons.html">Лекции</a></li>
+                    <li><a href="Pages/work.html">Практика</a></li>
+                    <li><a href="Pages/test.html">Тест</a></li>
+                    <li><a href="Pages/presentation.html">Презентации</a></li>
+                    <li><a href="Pages/video.html">Видео</a></li>
+                    <li><a href="Pages/author.html">Авторы</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-
-
-<div id="block">
-
-    <div id="center-block">
-        <div id="content">
-            <div class="content">
-
-
-
-            <p id="p_2">
-                <img src="Pages/images/python.jpeg" width="20%" height="20%" title="" /></br>
-
-                 Добро пожаловать в электронный учебный
-                курс по дициплине &quot;<b>Backend - разработка</b>&quot;.&nbsp;Руководитель
-                проекта студент 2 курса ГТК МУЦА Боскунчиев Давид Болотканович. Сайт является электронной
-                системой поддержки процесса  изучения   учебной дисциплины 		<b>"Backend - разработка"</b> для студентов,
-             &quot; технической специальности&quot;  Электронный учебный
-                курс содержит теоретические и
-                практические учебные материалы,
-                методические указания и систему
-                контроля знаний.
-            </p>
-        <center>
-
-            <h2>Силлабус    </h2>
-
-            <ul class="">
-              <li><a href="Pages/files/Sillabus/View/1.html">Backend - разработка 1 </a></li>
-              <li><a href="Pages/files/Sillabus/View/2.html">Backend - разработка 2 </a></li>
-            </ul>
-
-
-           </center>
+    <main class="container">
+        <div class="hero-card">
+            <img src="Pages/images/python.jpeg" alt="Python" class="hero-img">
+            <div class="hero-text">
+                <h1>Backend-разработка</h1>
+                <p>
+                    Добро пожаловать в электронный учебный курс. Сайт является системой поддержки 
+                    обучения студентов технических специальностей. Здесь собраны теоретические материалы, 
+                    практические задания и система контроля знаний.
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    Руководитель проекта: <strong>Боскунчиев Давид</strong>, студент 2 курса ГТК МУЦА.
+                </p>
             </div>
         </div>
-    </div>
 
-    <div class="clear_both"></div>
+        <section class="syllabus-section">
+            <h2>Силлабусы курса</h2>
+            <div class="syllabus-grid">
+                <a href="Pages/files/Sillabus/View/1.html" class="syllabus-link">
+                    📄 Модуль 1: Основы Backend
+                </a>
+                <a href="Pages/files/Sillabus/View/2.html" class="syllabus-link">
+                    📄 Модуль 2: Продвинутая архитектура
+                </a>
+            </div>
+        </section>
+    </main>
 
-</div>
-
-    <div id="footer-block">
-        <div id="footer">
-
+    <footer>
+        <div class="container">
+            &copy; 2026 Электронный учебный курс. Разработано в образовательных целях.
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>

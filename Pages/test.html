@@ -1,84 +1,284 @@
-﻿<!DOCTYPE HTML>
-<html>
+﻿<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html" />
     <meta charset="utf-8" />
-	<meta name="author" content="Dyikanova Nazira" />
-    <link rel="shortcut icon" href="icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dyikanova Nazira" />
+    <link rel="shortcut icon" href="ico.png" type="image/png" />
+    <title>Тестирование — Проверь свои знания</title>
 
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-	<!-- СCS стил для оформления теска -->
-    <link href="css/test.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Стили (включая оформление тестов) -->
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-glow: rgba(59, 130, 246, 0.4);
+            --bg-dark: #020617;
+            --glass: rgba(30, 41, 59, 0.6);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
 
-	<!-- Библеотека JST JQuery -->
+        body {
+            margin: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at 50% 0%, #1e293b 0%, var(--bg-dark) 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Навигация */
+        header {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: url('ico.png') no-repeat center/contain;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        /* Контент тестов */
+        main { padding: 60px 0; }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        /* Сетка карточек */
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .test-card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-decoration: none;
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .test-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4), 0 0 15px var(--primary-glow);
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        .test-number {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .test-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .test-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .test-card:hover .test-btn {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        footer {
+            padding: 50px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            .test-grid { grid-template-columns: 1fr; }
+            nav ul { display: none; }
+        }
+    </style>
+
+    <!-- Скрипты (JQuery и твой личный) -->
     <script src="js/jquery.js" type="text/javascript"></script>
-    <!-- Мой скрипт JST -->
     <script src="js/myscript.js" type="text/javascript"></script>
-
-	<title>Тест</title>
 </head>
 
 <body>
 
-    <div id="header-block">
-        <div id="header">
-            <div id="header">
-                <a href="index.html" title="На главную">
-                  <div class="logo">
-                  </div>
-                </a>
-            <ul>
-                <li><a href="lessons.html">Лекции</a></li>
-                <li><a href="work.html">Практика</a></li>
-                <li><a href="test.html">Тест</a></li>
-
-                <li><a href="presentation.html">Презентации</a></li>
-                <li><a href="video.html">Видео урок</a></li>
-                <li><a href="author.html">Автор</a></li>
-            </ul>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/Электронный учебник.html" title="На главную" class="logo"></a>
+                <ul>
+                    <li><a href="lessons.html">Лекции</a></li>
+                    <li><a href="work.html">Практика</a></li>
+                    <li><a href="test.html" style="color: var(--primary);">Тест</a></li>
+                    <li><a href="presentation.html">Презентации</a></li>
+                    <li><a href="video.html">Видео урок</a></li>
+                    <li><a href="author.html">Автор</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-<div id="block">
+    <main class="container">
+        <h1>Система тестирования</h1>
+        <p class="subtitle">Выберите модуль для проверки знаний по курсу</p>
 
-    <div id="center-block">
-        <div id="content">
-            <div class="content">
-                <h2 id="lessons_h2">Тест</h2>
-<div id="test-view">
+        <div class="test-grid">
+            <!-- Тест 1 -->
+            <a href="test/test_1.html" class="test-card">
+                <span class="test-number">Модуль 01</span>
+                <div class="test-title">Тест №1</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
 
-                            <ul class="answer">
-                            <br /><br />
-                                <li><a href="test/test_1.html">Тест №1 пройти</a></li>
-                                <li><a href="test/test_2.html">Тест №2 пройти</a></li>
-                                <li><a href="test/test_3.html">Тест №3 пройти</a></li>
-                                <li><a href="test/test_4.html">Тест №4 пройти</a></li>
-                                <li><a href="test/test_5.html">Тест №5 пройти</a></li>
-                                <li><a href="test/test_6.html">Тест №6 пройти</a></li>  
-                                <li><a href="test/test_7.html">Тест №7 пройти</a></li>
-                                <li><a href="test/test_8.html">Тест №8 пройти</a></li>
-                                <li><a href="test/test_9.html">Тест №9 пройти</a></li>
-                                <li><a href="test/test_10.html">Тест №10 пройти</a></li>
-                                
-                            </ul>
+            <!-- Тест 2 -->
+            <a href="test/test_2.html" class="test-card">
+                <span class="test-number">Модуль 02</span>
+                <div class="test-title">Тест №2</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
 
- </div>
+            <!-- Тест 3 -->
+            <a href="test/test_3.html" class="test-card">
+                <span class="test-number">Модуль 03</span>
+                <div class="test-title">Тест №3</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
 
+            <!-- Тест 4 -->
+            <a href="test/test_4.html" class="test-card">
+                <span class="test-number">Модуль 04</span>
+                <div class="test-title">Тест №4</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
 
-<div class="clear_both"></div>
+            <!-- Тест 5 -->
+            <a href="test/test_5.html" class="test-card">
+                <span class="test-number">Модуль 05</span>
+                <div class="test-title">Тест №5</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
 
-            </div>
+            <!-- Тест 6 -->
+            <a href="test/test_6.html" class="test-card">
+                <span class="test-number">Модуль 06</span>
+                <div class="test-title">Тест №6</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
+
+            <!-- Тест 7 -->
+            <a href="test/test_7.html" class="test-card">
+                <span class="test-number">Модуль 07</span>
+                <div class="test-title">Тест №7</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
+
+            <!-- Тест 8 -->
+            <a href="test/test_8.html" class="test-card">
+                <span class="test-number">Модуль 08</span>
+                <div class="test-title">Тест №8</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
+
+            <!-- Тест 9 -->
+            <a href="test/test_9.html" class="test-card">
+                <span class="test-number">Модуль 09</span>
+                <div class="test-title">Тест №9</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
+
+            <!-- Тест 10 -->
+            <a href="test/test_10.html" class="test-card">
+                <span class="test-number">Модуль 10</span>
+                <div class="test-title">Тест №10</div>
+                <div class="test-btn">Начать прохождение</div>
+            </a>
         </div>
-    </div>
+    </main>
 
-    <div class="clear_both"></div>
-
-</div>
-
-    <div id="footer-block">
-        <div id="footer"></div>
-    </div>
+    <footer>
+        <div class="container">
+            &copy; 2026 Образовательный портал. Автор: Дийканова Назира.
+        </div>
+    </footer>
 
 </body>
 </html>

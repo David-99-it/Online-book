@@ -1,103 +1,266 @@
-﻿    <!DOCTYPE HTML>
-<html>
+﻿<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html" />
     <meta charset="utf-8" />
-	<meta name="author" content="Dyikanova Nazira" />
-    <link rel="shortcut icon" href="icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dyikanova Nazira" />
+    <link rel="shortcut icon" href="ico.png" type="image/png" />
+    <title>Презентации к лекциям</title>
 
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --bg-dark: #020617;
+            --glass: rgba(30, 41, 59, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
 
-	<title>Практика</title>
+        body {
+            margin: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at 50% 0%, #1e293b 0%, var(--bg-dark) 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+        }
+
+        /* Шапка сайта */
+        header {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: url('ico.png') no-repeat center/contain;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        /* Контент */
+        main { padding: 60px 0; }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(to right, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Таблица презентаций */
+        .presentation-card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            text-align: left;
+            font-size: 0.85rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 24px 20px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+
+        tr:last-child td { border-bottom: none; }
+
+        tr:hover {
+            background: rgba(59, 130, 246, 0.02);
+        }
+
+        .item-number {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 1.1rem;
+            width: 80px;
+        }
+
+        .item-topic {
+            font-style: italic;
+            color: var(--text-main);
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Кнопка скачивания */
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+
+        .btn-download:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-download::before {
+            content: '↓';
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            th { display: none; }
+            td { display: block; width: 100%; box-sizing: border-box; text-align: center; }
+            .item-number { padding-top: 30px; margin: 0 auto; width: auto; }
+            .item-topic { padding: 10px 20px; }
+            .btn-download { margin-bottom: 30px; }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="header-block">
-        <div id="header">
-            <div id="header">
-                <a href="index.html" title="На главную">
-                  <div class="logo">
-                  </div>
-                </a>
-            <ul>
-                <li><a href="lessons.html">Лекции</a></li>
-                <li><a href="work.html">Практика</a></li>
-                <li><a href="test.html">Тест</a></li>
-                <li><a href="presentation.html">Презентации</a></li>
-                <li><a href="video.html">Видео урок</a></li>
-                <li><a href="author.html">Автор</a></li>
-            </ul>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/Электронный учебник.html" title="На главную" class="logo"></a>
+                <ul>
+                    <li><a href="lessons.html">Лекции</a></li>
+                    <li><a href="work.html">Практика</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="presentation.html" style="color: var(--primary);">Презентации</a></li>
+                    <li><a href="video.html">Видео урок</a></li>
+                    <li><a href="author.html">Автор</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-<div id="block">
+    <main class="container">
+        <h1>Учебные презентации</h1>
 
-    <div id="center-block">
-        <div id="content">
-            <div class="content">
-            <h2 id="lessons_h2">Презентаци</h2>
-            <table class="table_lessons" >
-                <tr>
+        <div class="presentation-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Тема лекции</th>
+                        <th style="text-align: right;">Файл</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Презентация 1 -->
+                    <tr>
+                        <td class="item-number">№ 1</td>
+                        <td class="item-topic">Понятия алгоритма и языка программирования. Разновидности языков программирования.</td>
+                        <td style="text-align: right;">
+                            <a href="files/present/Download/Лекция №1.pptx" class="btn-download">PPTX</a>
+                        </td>
+                    </tr>
 
-                  
-                    <td class="dow_view_work"><b> №</b></td>
-                    <div id="center-block">
-                    <td class="dow_view_work"><b>Темы презентаций</b></td>
+                    <!-- Презентация 2 -->
+                    <tr>
+                        <td class="item-number">№ 2</td>
+                        <td class="item-topic">Язык программирования высокого уровня С++ и среда разработки Visual Studio. Типы данных.</td>
+                        <td style="text-align: right;">
+                            <a href="files/present/Download/Лекция №2.pptx" class="btn-download">PPTX</a>
+                        </td>
+                    </tr>
 
-                </tr>
-                <tr>
-                    <td class="dow_view_work">№ 1</td>
-                    <td class="dow_view_work"><i> 
-	       Понятия алгоритма и языка программирования. Разновидности языков программирования.  
-                   </i></td>
-                    <td><a  class="lessons_a" href="files/present/Download/Лекция №1.pptx">Скачать</a></td>
-                            
-			<!-- <p class="dow_ppt"><a href="dow.pptx" ena>Скачать презинтацию</a></p> -->
-                        
-                     <table class="table_lessons" >
-                     <td class="dow_view_work">№ 2</td>
-                    <td class="dow_view_work"><i> 
-	       Язык программирования высокого уровня С++ и среда разработки Visual Studio. Типы данных. 
+                    <!-- Презентация 3 -->
+                    <tr>
+                        <td class="item-number">№ 3</td>
+                        <td class="item-topic">Условный оператор if – else в языке С++. Операторы switch и break.</td>
+                        <td style="text-align: right;">
+                            <a href="files/present/Download/Лекция №3.pptx" class="btn-download">PPTX</a>
+                        </td>
+                    </tr>
 
-</i></td>
-                    <td><a  class="lessons_a" href="files/present/Download/Лекция №2.pptx">Скачать</a></td>
-                    <!-- <p class="dow_ppt"><a href="dow.pptx" ena>Скачать презинтацию</a></p> -->
-            
-                     <table class="table_lessons" >
-                     <td class="dow_view_work">№ 3</td>
-                    <td class="dow_view_work"><i> 
-	       Условный оператор if – else в языке  С++. Операторы switch и break.
-
-</i></td>
-                    <td><a  class="lessons_a" href="files/present/Download/Лекция №3.pptx">Скачать</a></td>
-                    <!-- <p class="dow_ppt"><a href="dow.pptx" ena>Скачать презинтацию</a></p> --></table>
-                    
-                     <table class="table_lessons" >
-                     <td class="dow_view_work">№ 4</td>
-                    <td class="dow_view_work"><i> 
-	       Операторы цикла.Массивы. Цикл с параметром  for. Цикл с предусловием while.
-
-
-
-
-</i></td>
-                    <td><a  class="lessons_a" href="files/present/Download/Лекция №4.pptx">Скачать</a></td>
-                    <!-- <p class="dow_ppt"><a href="dow.pptx" ena>Скачать презинтацию</a></p> --></table> 
-</div>
-</tr>
-               
+                    <!-- Презентация 4 -->
+                    <tr>
+                        <td class="item-number">№ 4</td>
+                        <td class="item-topic">Операторы цикла. Массивы. Цикл с параметром for. Цикл с предусловием while.</td>
+                        <td style="text-align: right;">
+                            <a href="files/present/Download/Лекция №4.pptx" class="btn-download">PPTX</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </div>
+    </main>
 
-    <div class="clear_both"></div>
-
-</div>
-
-    <div id="footer-block">
-        <div id="footer"></div>
-    </div>
+    <footer>
+        <div class="container">
+            &copy; 2026 Учебные материалы. Автор: Дийканова Назира.
+        </div>
+    </footer>
 
 </body>
 </html>

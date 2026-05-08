@@ -1,70 +1,212 @@
-﻿<!DOCTYPE HTML>
-<html>
+﻿<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html" />
     <meta charset="utf-8" />
-	<meta name="author" content="Dyikanova Nazira" />
-    <link rel="shortcut icon" href="icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dyikanova Nazira" />
+    <link rel="shortcut icon" href="ico.png" type="image/png" />
+    <title>Автор проекта — Дыйканова Н. Б.</title>
 
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --bg-dark: #020617;
+            --glass: rgba(30, 41, 59, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
 
-	<title>Автор проекта</title>
+        body {
+            margin: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at 50% 0%, #1e293b 0%, var(--bg-dark) 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: url('ico.png') no-repeat center/contain;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 0;
+        }
+
+        /* Карточка автора */
+        .author-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 32px;
+            padding: 50px 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .author-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary);
+            padding: 5px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .author-name {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .author-title {
+            font-size: 1rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .contact-info {
+            border-top: 1px solid var(--border);
+            padding-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .contact-item strong {
+            color: var(--text-main);
+        }
+
+        a.contact-item:hover {
+            color: var(--primary);
+        }
+
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 600px) {
+            .author-card { padding: 30px 20px; margin: 0 20px; }
+            nav ul { display: none; }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="header-block">
-        <div id="header">
-            <div id="header">
-                <a href="./index.html" title="На главную">
-                  <div class="logo">
-                  </div>
-                </a>
-            <ul>
-
-                <li><a href="lessons.html">Лекции</a></li>
-                <li><a href="work.html">Практика</a></li>
-                <li><a href="test.html">Тест</a></li>
-
-                <li><a href="presentation.html">Презентации</a></li>
-                <li><a href="video.html">Видео урок</a></li>
-                <li><a href="author.html">Автор</a></li>
-            </ul>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/Электронный учебник.html" title="На главную" class="logo"></a>
+                <ul>
+                    <li><a href="lessons.html">Лекции</a></li>
+                    <li><a href="work.html">Практика</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="presentation.html">Презентации</a></li>
+                    <li><a href="video.html">Видео урок</a></li>
+                    <li><a href="author.html" style="color: var(--primary);">Автор</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-<div id="block">
- <div id="center-block">
-        <div id="content">
-
-            <div class="content">
-               <br>
-               <div id="author_1">
-               <table class="Anonym">
-                <img src="images/4ngryc4t.jpg" width="20%" height="20%" title="" /></br>
-               <tr><td class="author">Старший преподаватель кафедры "ПОКС" филиала им.академика Х.А. Рахматулина г. Токмок, Дыйканова Н. Б.</td></tr>
-               <tr><td class="author">Email: nazira.dyykanova@bk.ru</td></tr>
-               <tr><td class="author">тел.: 0755222447 </td></tr>
-                       
-   
-                </table>
-
-               </div>
-
-
+    <main>
+        <div class="author-card">
+            <img src="images/4ngryc4t.jpg" alt="Фото автора" class="author-photo">
+            
+            <div class="author-name">Дыйканова Н. Б.</div>
+            <div class="author-title">
+                Старший преподаватель кафедры «ПОКС» филиала им. академика Х.А. Рахматулина, г. Токмок
             </div>
 
+            <div class="contact-info">
+                <a href="mailto:nazira.dyykanova@bk.ru" class="contact-item">
+                    <strong>Email:</strong> nazira.dyykanova@bk.ru
+                </a>
+                <div class="contact-item">
+                    <strong>Тел.:</strong> 0755 22 24 47
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 
-    <div class="clear_both"></div>
-
-</div>
-
-    <div id="footer-block">
-        <div id="footer"></div>
-    </div>
+    <footer>
+        <div class="container">
+            &copy; 2026 Образовательный проект. Все права защищены.
+        </div>
+    </footer>
 
 </body>
 </html>

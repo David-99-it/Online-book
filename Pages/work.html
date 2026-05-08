@@ -1,125 +1,363 @@
-﻿    <!DOCTYPE HTML>
-<html>
+﻿<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html" />
     <meta charset="utf-8" />
-	<meta name="author" content="Dyikanova Nazira" />
-    <link rel="shortcut icon" href="icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dyikanova Nazira" />
+    <link rel="shortcut icon" href="ico.png" type="image/png" />
+    <title>Практика — Лабораторные работы</title>
 
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --bg-dark: #020617;
+            --glass: rgba(30, 41, 59, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
 
-	<title>Практика</title>
+        body {
+            margin: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at 50% 0%, #1e293b 0%, var(--bg-dark) 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Навигация */
+        header {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: url('ico.png') no-repeat center/contain;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        /* Контент */
+        main { padding: 60px 0; }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(to right, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Контейнер таблицы */
+        .table-card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            padding: 20px 24px;
+            text-align: left;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+        }
+
+        td {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+
+        tr:last-child td { border-bottom: none; }
+
+        tr:hover {
+            background: rgba(59, 130, 246, 0.03);
+        }
+
+        .lab-num {
+            font-weight: 800;
+            color: var(--primary);
+            width: 60px;
+        }
+
+        .lab-topic {
+            font-style: italic;
+            color: var(--text-main);
+        }
+
+        /* Стили кнопок */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .btn {
+            padding: 8px 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-view {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-view:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-down {
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+
+        .btn-down:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Адаптивность для мобильных */
+        @media (max-width: 768px) {
+            th { display: none; }
+            td { display: block; width: 100%; box-sizing: border-box; text-align: center; padding: 10px 20px; border: none; }
+            .lab-num { padding-top: 25px; font-size: 1.3rem; margin: 0 auto; }
+            .btn-group { justify-content: center; padding-bottom: 25px; border-bottom: 1px solid var(--border); }
+            nav ul { display: none; }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="header-block">
-        <div id="header">
-            <div id="header">
-                <a href="index.html" title="На главную">
-                  <div class="logo">
-                  </div>
-                </a>
-            <ul>
-                <li><a href="lessons.html">Лекции</a></li>
-                <li><a href="work.html">Практика</a></li>
-                <li><a href="test.html">Тест</a></li>
-
-                <li><a href="presentation.html">Презентации</a></li>
-                <li><a href="video.html">Видео урок</a></li>
-                <li><a href="author.html">Автор</a></li>
-            </ul>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/Электронный учебник.html" title="На главную" class="logo"></a>
+                <ul>
+                    <li><a href="lessons.html">Лекции</a></li>
+                    <li><a href="work.html">Практика</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="presentation.html">Презентации</a></li>
+                    <li><a href="video.html">Видео урок</a></li>
+                    <li><a href="author.html">Автор</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-<div id="block">
+    <main class="container">
+        <h1>Лабораторный практикум</h1>
 
-    <div id="center-block">
-        <div id="content">
-            <div class="content">
-            <h2 id="lessons_h2">Практика</h2>
-            <table class="table_lessons" >
-                <tr>
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Тема лабораторной работы</th>
+                        <th style="text-align: right;">Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Лаба 1 -->
+                    <tr>
+                        <td class="lab-num">№1</td>
+                        <td class="lab-topic">Введение в программирование. Работа с потоком ввода-вывода данных. Математические операции.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_1.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_1.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
 
-                    <!-- files/lab/Download/Download/labs_10.doc -->
-                    <td class="dow_view_work"><b>Лабораторная<br>работа №</b></td>
-                    <td class="dow_view_work"><b>Темы лабороторных работы</b></td>
+                    <!-- Лаба 2 -->
+                    <tr>
+                        <td class="lab-num">№2</td>
+                        <td class="lab-topic">Создание программ с использованием условного оператора if – else.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_2.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_2.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
 
-                </tr>
-                <tr>
-                    <td class="dow_view_work">№ 1</td>
-                    <td class="dow_view_work"><i>Введение программирование. Работа с потоком ввода-вывода  данных. Работа с математическими операциями.</i></td>
-                    <td><a  class="lessons_a" href="files/lab/Download/labs_1.doc">Скачать</a></td>
-                    <td><a  class="lesson_a_2" target="_blank" href="files/lab/Views/labs_1.html">Посмотреть</a></td>
-                </tr>
-                      <tr>
-                    <td class="dow_view_work">№ 2</td>
-                    <td class="dow_view_work"><i>Создание программ с использованием  условного оператора if –else.</i></td>
-                    <td class="a_work"><a class="lessons_a" href="files/lab/Download/labs_2.doc">Скачать</a></td>
-                    <td><a class="lesson_a_2" target="_blank" href="files/lab/Views/labs_2.html">Посмотреть</a></td>
-                </tr>
-                <tr>
-                    <td class="dow_view_work">№ 3</td>
-                    <td class="dow_view_work"><i>Разработка программ с использованием оператора switch.<i>
-                    </td>
-                    <td><a  class="lessons_a" href="files/lab/Download/labs_3.doc">Скачать</a></td>
-                    <td><a  class="lesson_a_2" target="_blank" href="files/lab/Views/labs_3.html">Посмотреть</a></td>
-                </tr>                      <tr>
-                    <td class="dow_view_work">№ 4</td>
-                    <td class="dow_view_work"> <i>Разработка программ с применением операторов цикла<i></td>
-                    <td class="a_work"><a class="lessons_a" href="files/lab/Download/labs_4.doc">Скачать</a></td>
-                    <td><a class="lesson_a_2" target="_blank" href="files/lab/Views/labs_4.html">Посмотреть</a></td>
-                </tr>
-                <tr>
-                    <td class="dow_view_work">№ 5</td>
-                    <td class="dow_view_work"><i>Разработка программ с применением  одномерных массивов<i></td>
-                    <td><a  class="lessons_a" href="files/lab/Download/labs_5.doc">Скачать</a></td>
-                    <td><a  class="lesson_a_2" target="_blank" href="files/lab/Views/labs_5.html">Посмотреть</a></td>
-                </tr>                      <tr>
-                    <td class="dow_view_work">№ 6</td>
-                    <td class="dow_view_work"><i>Разработка программ с использованием стандартных функции работы со строками.</i></td>
-                    <td class="a_work"><a class="lessons_a" href="files/lab/Download/labs_6.doc">Скачать</a></td>
-                    <td><a class="lesson_a_2" target="_blank" href="files/lab/Views/labs_6.html">Посмотреть</a></td>
-                </tr>
-                <tr>
-                    <td class="dow_view_work">№ 7</td>
-                    <td class="dow_view_work"><i>Разработка программ с применением функций.</i></td>
-                    <td><a  class="lessons_a" href="files/lab/Download/labs_7.doc">Скачать</a></td>
-                    <td><a  class="lesson_a_2" target="_blank" href="files/lab/Views/labs_7.html">Посмотреть</a></td>
-                </tr>                      <tr>
-                    <td class="dow_view_work">№ 8</td>
-                    <td class="dow_view_work"><i>Программирование с применением перегрузки функций<i></td>
-                    <td class="a_work"><a class="lessons_a" href="files/lab/Download/labs_8.doc">Скачать</a></td>
-                    <td><a class="lesson_a_2" target="_blank" href="files/lab/Views/labs_8.html">Посмотреть</a></td>
-                </tr>
-                <tr>
-                    <td class="dow_view_work">№ 9</td>
-                    <td class="dow_view_work"><i>Локальные и глобальные переменные в Microsoft Visual C++.</i></td>
-                    <td><a  class="lessons_a" href="files/lab/Download/labs_9.doc">Скачать</a></td>
-                    <td><a  class="lesson_a_2" target="_blank" href="files/lab/Views/labs_9.html">Посмотреть</a></td>
-                </tr>                      <tr>
-                    <td class="dow_view_work">№ 10</td>
-                    <td class="dow_view_work"><i>Разработка программ с применением дополнительных возможностей потоков cin и cout.
-                    </i></td>
-                    <td class="a_work"><a class="lessons_a" href="files/lab/Download/labs_10.doc">Скачать</a></td>
-                    <td><a class="lesson_a_2" target="_blank" href="files/lab/Views/labs_10.html">Посмотреть</a></td>
-                </tr>
+                    <!-- Лаба 3 -->
+                    <tr>
+                        <td class="lab-num">№3</td>
+                        <td class="lab-topic">Разработка программ с использованием оператора switch.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_3.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_3.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Лаба 4 -->
+                    <tr>
+                        <td class="lab-num">№4</td>
+                        <td class="lab-topic">Разработка программ с применением операторов цикла.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_4.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_4.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Лаба 5 -->
+                    <tr>
+                        <td class="lab-num">№5</td>
+                        <td class="lab-topic">Разработка программ с применением одномерных массивов.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_5.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_5.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Лаба 6 -->
+                    <tr>
+                        <td class="lab-num">№6</td>
+                        <td class="lab-topic">Разработка программ с использованием стандартных функций работы со строками.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_6.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_6.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Лаба 7 -->
+                    <tr>
+                        <td class="lab-num">№7</td>
+                        <td class="lab-topic">Разработка программ с применением функций.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_7.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_7.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Лаба 8 -->
+                    <tr>
+                        <td class="lab-num">№8</td>
+                        <td class="lab-topic">Программирование с применением перегрузки функций.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_8.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_8.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Лаба 9 -->
+                    <tr>
+                        <td class="lab-num">№9</td>
+                        <td class="lab-topic">Локальные и глобальные переменные в Microsoft Visual C++.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_9.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_9.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Лаба 10 -->
+                    <tr>
+                        <td class="lab-num">№10</td>
+                        <td class="lab-topic">Применение дополнительных возможностей потоков cin и cout.</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="files/lab/Download/labs_10.doc" class="btn btn-down">DOC</a>
+                                <a href="files/lab/Views/labs_10.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
-
-			<!-- <p class="dow_ppt"><a href="dow.pptx" ena>Скачать презинтацию</a></p> -->
-
-            </div>
         </div>
-    </div>
+    </main>
 
-    <div class="clear_both"></div>
-
-</div>
-
-    <div id="footer-block">
-        <div id="footer"></div>
-    </div>
+    <footer>
+        <div class="container">
+            &copy; 2026 Практический курс. Автор: Дийканова Назира.
+        </div>
+    </footer>
 
 </body>
 </html>

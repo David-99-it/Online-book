@@ -1,86 +1,216 @@
-﻿    <!DOCTYPE HTML>
-<html>
+﻿<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html" />
     <meta charset="utf-8" />
-	<meta name="author" content="Dyikanova Nazira" />
-    <link rel="shortcut icon" href="icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dyikanova Nazira" />
+    <link rel="shortcut icon" href="ico.png" type="image/png" />
+    <title>Видео уроки по C++</title>
 
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --bg-dark: #020617;
+            --glass: rgba(30, 41, 59, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
 
-	<title>Практика</title>
+        body {
+            margin: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at 50% 0%, #1e293b 0%, var(--bg-dark) 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: url('ico.png') no-repeat center/contain;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        main { padding: 60px 0; }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(to right, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Сетка видео */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .video-card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            background: #000;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .video-title {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul { display: none; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="header-block">
-        <div id="header">
-            <div id="header">
-                <a href="index.html" title="На главную">
-                  <div class="logo">
-                  </div>
-                </a>
-            <ul>
-                <li><a href="lessons.html">Лекции</a></li>
-                <li><a href="work.html">Практика</a></li>
-                <li><a href="test.html">Тест</a></li>
-
-                <li><a href="presentation.html">Презентации</a></li>
-                <li><a href="video.html">Видео урок</a></li>
-                <li><a href="author.html">Автор</a></li>
-            </ul>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/Электронный учебник.html" title="На главную" class="logo"></a>
+                <ul>
+                    <li><a href="lessons.html">Лекции</a></li>
+                    <li><a href="work.html">Практика</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="presentation.html">Презентации</a></li>
+                    <li><a href="video.html" style="color: var(--primary);">Видео урок</a></li>
+                    <li><a href="author.html">Автор</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-<div id="block">
+    <main class="container">
+        <h1>Видеокурсы по программированию</h1>
 
-    <div id="center-block">
-        <div id="content">
-            <div class="content">
-            <h2 id="lessons_h2">Видео</h2>
-<center>
-                <video width="320" height="240" alt="С++ с нуля- урок 7 - строки и функции работы с ними.mp4" title="С++ с нуля- урок 7 - строки и функции работы с ними.mp4" controls>
+        <div class="video-grid">
+            <!-- Урок 7 -->
+            <div class="video-card">
+                <video controls>
                     <source src="files/video/С++ с нуля- урок 7 - строки и функции работы с ними.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <div class="video-title">Урок 7: Строки и функции работы с ними</div>
+            </div>
 
-                  Your browser does not support the video tag.
-                    </video>
-
-  <video width="320" height="240" title="C++. Оператор switch и goto. Урок 6"controls>
+            <!-- Урок 6 -->
+            <div class="video-card">
+                <video controls>
                     <source src="files/video/C++. Оператор switch и goto. Урок 6.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <div class="video-title">Урок 6: Оператор switch и goto</div>
+            </div>
 
-                  Your browser does not support the video tag.
-                    </video>
-  <video width="320" height="240" controls>
+            <!-- Урок 1 -->
+            <div class="video-card">
+                <video controls>
                     <source src="files/video/1.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <div class="video-title">Урок 1: Введение в основы C++</div>
+            </div>
 
-                  Your browser does not support the video tag.
-                    </video>
-  <video width="320" height="240" controls>
+            <!-- Массивы -->
+            <div class="video-card">
+                <video controls>
                     <source src="files/video/7 Массивы C++ (1).mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <div class="video-title">Урок 7: Работа с массивами в C++</div>
+            </div>
 
-                  Your browser does not support the video tag.
-                    </video>
-   <video width="320" height="240" controls>
+            <!-- Оператор if -->
+            <div class="video-card">
+                <video controls>
                     <source src="files/video/4 Оператор if (if else) в C++.mp4" type="video/mp4">
-
-                  Your browser does not support the video tag.
-                    </video>
-</center>
-
-			<!-- <p class="dow_ppt"><a href="dow.mp4" ena>Скачать видео</a></p> -->
-
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <div class="video-title">Урок 4: Условный оператор if...else</div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <div class="clear_both"></div>
-
-</div>
-
-    <div id="footer-block">
-        <div id="footer"></div>
-    </div>
+    <footer>
+        <div class="container">
+            &copy; 2026 Видео-практикум. Автор: Дийканова Назира.
+        </div>
+    </footer>
 
 </body>
 </html>

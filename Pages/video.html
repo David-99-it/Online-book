@@ -85,7 +85,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Сетка видео */
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -98,6 +97,8 @@
             border-radius: 20px;
             padding: 15px;
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .video-card:hover {
@@ -105,12 +106,24 @@
             border-color: var(--primary);
         }
 
-        video {
+        /* Адаптивный контейнер для видео 16:9 */
+        .video-container {
+            position: relative;
             width: 100%;
-            height: auto;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
             border-radius: 12px;
             background: #000;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         .video-title {
@@ -119,7 +132,6 @@
             font-weight: 600;
             color: var(--text-main);
             text-align: center;
-            padding: 0 10px;
         }
 
         footer {
@@ -156,59 +168,157 @@
     </header>
 
     <main class="container">
-        <h1>Видеокурсы по программированию</h1>
+        <h1>Полезные видео-уроки по Python</h1>
 
         <div class="video-grid">
-            <!-- Урок 7 -->
+           
             <div class="video-card">
-                <video controls>
-                    <source src="files/video/С++ с нуля- урок 7 - строки и функции работы с ними.mp4" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
-                </video>
-                <div class="video-title">Урок 7: Строки и функции работы с ними</div>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/34Rp6KVGIEM" 
+                        title="урок по Python №1" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #1 – Программирование на Питон для начинающих</div>
             </div>
 
-            <!-- Урок 6 -->
             <div class="video-card">
-                <video controls>
-                    <source src="files/video/C++. Оператор switch и goto. Урок 6.mp4" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
-                </video>
-                <div class="video-title">Урок 6: Оператор switch и goto</div>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/CfqX2_xY8VQ" 
+                        title="урок по Python №2" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #2 – Установка среды разработки</div>
             </div>
 
-            <!-- Урок 1 -->
             <div class="video-card">
-                <video controls>
-                    <source src="files/video/1.mp4" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
-                </video>
-                <div class="video-title">Урок 1: Введение в основы C++</div>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/ML5tP8m6SHw" 
+                        title="урок по Python №3" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #3 – Базовые операции в языке Python</div>
             </div>
 
-            <!-- Массивы -->
             <div class="video-card">
-                <video controls>
-                    <source src="files/video/7 Массивы C++ (1).mp4" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
-                </video>
-                <div class="video-title">Урок 7: Работа с массивами в C++</div>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/DZvNZ9l9NT4" 
+                        title="урок по Python №4" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #4 – Переменные и типы данных</div>
             </div>
 
-            <!-- Оператор if -->
             <div class="video-card">
-                <video controls>
-                    <source src="files/video/4 Оператор if (if else) в C++.mp4" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
-                </video>
-                <div class="video-title">Урок 4: Условный оператор if...else</div>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/SUDNfS_0X-Q" 
+                        title="урок по Python №5" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #5 – Условные операторы</div>
             </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/vMD6-jzgDvI" 
+                        title="урок по Python №6" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #6 – Циклы и операторы в них (for, while)</div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/-X2ubBdP2Ak" 
+                        title="урок по Python №7" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #7 – Списки (list). Функции и их методы</div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/pqaBWcsBGyA" 
+                        title="урок по Python №8" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #8 – Функции строк. Индексы и срезы</div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/cQfu-hYo2o4" 
+                        title="урок по Python №9" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #9 – Кортежи (tuple)</div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/W2oO1Y-QDzo" 
+                        title="урок по Python №10" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-title">Уроки Python с нуля / #10 – Словари (dict) и работа с ними</div>
+            </div>
+
+
         </div>
     </main>
 
     <footer>
         <div class="container">
-            &copy; 2026 Видео-практикум. Автор: Дийканова Назира.
+            &copy; 2026 Учебный портал. Автор: Боскунчиев Давид.
         </div>
     </footer>
 

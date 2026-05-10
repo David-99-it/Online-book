@@ -28,7 +28,6 @@
             min-height: 100vh;
         }
 
-        /* Шапка сайта */
         header {
             background: rgba(2, 6, 23, 0.8);
             backdrop-filter: blur(15px);
@@ -76,7 +75,6 @@
 
         nav a:hover { color: var(--primary); }
 
-        /* Контент */
         main { padding: 60px 0; }
 
         h1 {
@@ -88,7 +86,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Таблица презентаций */
         .presentation-card {
             background: var(--glass);
             backdrop-filter: blur(10px);
@@ -140,8 +137,8 @@
             line-height: 1.5;
         }
 
-        /* Кнопка скачивания */
-        .btn-download {
+        /* Кнопка открытия (бывшая скачивания) */
+        .btn-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -156,14 +153,15 @@
             white-space: nowrap;
         }
 
-        .btn-download:hover {
+        .btn-link:hover {
             background: var(--primary-hover);
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
         }
 
-        .btn-download::before {
-            content: '↓';
+        /* Заменили стрелку вниз на значок перехода (вверх-вправо) */
+        .btn-link::before {
+            content: '↗';
             font-weight: bold;
             font-size: 1.1rem;
         }
@@ -180,7 +178,7 @@
             td { display: block; width: 100%; box-sizing: border-box; text-align: center; }
             .item-number { padding-top: 30px; margin: 0 auto; width: auto; }
             .item-topic { padding: 10px 20px; }
-            .btn-download { margin-bottom: 30px; }
+            .btn-link { margin-bottom: 30px; }
         }
     </style>
 </head>
@@ -211,44 +209,48 @@
                 <thead>
                     <tr>
                         <th>№</th>
-                        <th>Тема лекции</th>
-                        <th style="text-align: right;">Файл</th>
+                        <th>Тема презентации</th>
+                        <th style="text-align: right;">Ссылка</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Презентация 1 -->
                     <tr>
                         <td class="item-number">№ 1</td>
-                        <td class="item-topic">Понятия алгоритма и языка программирования. Разновидности языков программирования.</td>
+                        <td class="item-topic">Знакомство с ментором. Переменные, типы данных, вывод данных</td>
                         <td style="text-align: right;">
-                            <a href="files/present/Download/Лекция №1.pptx" class="btn-download">PPTX</a>
+                            <a href="https://canva.link/j6fnu992pyh1epe" class="btn-link">Canva</a>
                         </td>
                     </tr>
 
-                    <!-- Презентация 2 -->
                     <tr>
                         <td class="item-number">№ 2</td>
-                        <td class="item-topic">Язык программирования высокого уровня С++ и среда разработки Visual Studio. Типы данных.</td>
+                        <td class="item-topic">Ввод данных, преобразование типов данных, условные конструкции и операторы сравнения. Операторы and, or, not </td>
                         <td style="text-align: right;">
-                            <a href="files/present/Download/Лекция №2.pptx" class="btn-download">PPTX</a>
+                            <a href="https://canva.link/udhl2yxly16eoxf" class="btn-link">Canva</a>
                         </td>
                     </tr>
 
-                    <!-- Презентация 3 -->
                     <tr>
                         <td class="item-number">№ 3</td>
-                        <td class="item-topic">Условный оператор if – else в языке С++. Операторы switch и break.</td>
+                        <td class="item-topic">Списки, методы списков, цикл for и функция range</td>
                         <td style="text-align: right;">
-                            <a href="files/present/Download/Лекция №3.pptx" class="btn-download">PPTX</a>
+                            <a href="https://canva.link/yiawrhbasr0iilj" class="btn-link">Canva</a>
                         </td>
                     </tr>
 
-                    <!-- Презентация 4 -->
                     <tr>
                         <td class="item-number">№ 4</td>
-                        <td class="item-topic">Операторы цикла. Массивы. Цикл с параметром for. Цикл с предусловием while.</td>
+                        <td class="item-topic">Практика условных конструкций, списков и методов списка</td>
                         <td style="text-align: right;">
-                            <a href="files/present/Download/Лекция №4.pptx" class="btn-download">PPTX</a>
+                            <a href="https://canva.link/yrjwy1q57tfbx2o" class="btn-link">Canva</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="item-number">№ 5</td>
+                        <td class="item-topic">Практика цикла for и функции range</td>
+                        <td style="text-align: right;">
+                            <a href="https://canva.link/yrjwy1q57tfbx2o" class="btn-link">Canva</a>
                         </td>
                     </tr>
                 </tbody>
@@ -258,7 +260,7 @@
 
     <footer>
         <div class="container">
-            &copy; 2026 Учебные материалы. Автор: Дийканова Назира.
+            &copy; 2026 Учебные материалы. Автор: Боскунчиев Давид
         </div>
     </footer>
 

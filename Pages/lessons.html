@@ -12,7 +12,7 @@
     <style>
         :root {
             --primary: #3b82f6;
-            --primary-light: rgba(59, 130, 246, 0.1);
+            --primary-hover: #2563eb;
             --bg-dark: #020617;
             --glass: rgba(30, 41, 59, 0.7);
             --border: rgba(255, 255, 255, 0.1);
@@ -29,7 +29,6 @@
             line-height: 1.6;
         }
 
-        /* Навигация (в стиле главной) */
         header {
             background: rgba(2, 6, 23, 0.8);
             backdrop-filter: blur(15px);
@@ -77,7 +76,6 @@
 
         nav a:hover { color: var(--primary); }
 
-        /* Контент */
         main { padding: 60px 0; }
 
         h1 {
@@ -89,7 +87,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Стилизация таблицы лекций */
         .table-container {
             background: var(--glass);
             backdrop-filter: blur(10px);
@@ -120,46 +117,29 @@
 
         tr:last-child td { border-bottom: none; }
 
-        tr:hover {
-            background: rgba(59, 130, 246, 0.03);
-        }
+        tr:hover { background: rgba(59, 130, 246, 0.03); }
 
         .num-col { width: 80px; font-weight: 700; color: var(--primary); }
-        .topic-col { font-style: italic; color: var(--text-main); }
-
-        /* Кнопки */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            padding: 8px 16px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: 0.3s;
-            white-space: nowrap;
-        }
+        .topic-col { color: var(--text-main); font-weight: 500; }
 
         .btn-view {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 700;
             background: var(--primary);
             color: white;
+            transition: 0.3s;
+            white-space: nowrap;
         }
 
         .btn-view:hover {
             background: var(--primary-hover);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-        }
-
-        .btn-download {
-            border: 1px solid var(--border);
-            color: var(--text-muted);
-            margin-right: 8px;
-        }
-
-        .btn-download:hover {
-            border-color: var(--primary);
-            color: var(--primary);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
         }
 
         footer {
@@ -171,9 +151,9 @@
 
         @media (max-width: 768px) {
             th { display: none; }
-            td { display: block; width: 100%; padding: 10px 20px; border: none; }
-            .num-col { padding-top: 20px; font-size: 1.2rem; }
-            .actions-col { padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+            td { display: block; width: 100%; padding: 12px 24px; border: none; }
+            .num-col { padding-top: 24px; }
+            .actions-col { padding-bottom: 24px; border-bottom: 1px solid var(--border); }
             nav ul { display: none; }
         }
     </style>
@@ -186,7 +166,7 @@
             <nav>
                 <a href="/Электронный учебник.html" title="На главную" class="logo"></a>
                 <ul>
-                    <li><a href="lessons.html">Лекции</a></li>
+                    <li><a href="lessons.html" style="color: var(--primary);">Лекции</a></li>
                     <li><a href="work.html">Практика</a></li>
                     <li><a href="test.html">Тест</a></li>
                     <li><a href="presentation.html">Презентации</a></li>
@@ -210,73 +190,43 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Лекция 1 -->
                     <tr>
                         <td class="num-col">№1</td>
-                        <td class="topic-col">Понятия алгоритма и языка программирования. Разновидности языков. Жизненный цикл программы.</td>
+                        <td class="topic-col">Переменные, типы данных, вывод данных</td>
                         <td class="actions-col" style="text-align: right;">
-                            <a href="files/less/Download/TP_1/lesson_1.docx" class="btn btn-download">DOCX</a>
-                            <a href="files/less/VIew/TP_1/lesson_1.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            <a href="https://docs.google.com/document/d/1unU1pjG74wHqbJZFfRRZRMqqa-tepaHX/edit?usp=sharing&ouid=100420671681591998340&rtpof=true&sd=true" target="_blank" class="btn btn-view">Смотреть лекцию</a>
                         </td>
                     </tr>
                     
-                    <!-- Лекция 2 -->
                     <tr>
                         <td class="num-col">№2</td>
-                        <td class="topic-col">Язык C++ и среда Visual Studio. Типы данных, ключевые слова и базовые операции.</td>
+                        <td class="topic-col">Ввод данных, преобразование типов данных, условные конструкции и операторы сравнения. Операторы and, or, not</td>
                         <td class="actions-col" style="text-align: right;">
-                            <a href="files/less/Download/TP_1/lesson_2.docx" class="btn btn-download">DOCX</a>
-                            <a href="files/less/VIew/TP_1/lesson_2.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            <a href="https://docs.google.com/document/d/1hEVxZ_JGWGwPMDbOg8aADPamDrNJlMes/edit?usp=sharing&ouid=100420671681591998340&rtpof=true&sd=true" target="_blank" class="btn btn-view">Смотреть лекцию</a>
                         </td>
                     </tr>
 
-                    <!-- Лекция 3 -->
                     <tr>
                         <td class="num-col">№3</td>
-                        <td class="topic-col">Условный оператор if–else. Операторы switch и break. Конструкции и принципы работы.</td>
+                        <td class="topic-col">Списки, методы списков, цикл for и функция range</td>
                         <td class="actions-col" style="text-align: right;">
-                            <a href="files/less/Download/TP_1/lesson_3.docx" class="btn btn-download">DOCX</a>
-                            <a href="files/less/VIew/TP_1/lesson_3.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            <a href="https://docs.google.com/document/d/1TJiUuSWlm_DaPA7j1i2iFUMevBnlAd25/edit?usp=sharing&ouid=100420671681591998340&rtpof=true&sd=true" target="_blank" class="btn btn-view">Смотреть лекцию</a>
                         </td>
                     </tr>
 
-                    <!-- Лекция 4 -->
                     <tr>
                         <td class="num-col">№4</td>
-                        <td class="topic-col">Операторы цикла. Массивы. Изучение циклов и структуры данных в C++.</td>
+                        <td class="topic-col">Практика условных конструкций, списков и методов списка</td>
                         <td class="actions-col" style="text-align: right;">
-                            <a href="files/less/Download/TP_1/lesson_4.docx" class="btn btn-download">DOCX</a>
-                            <a href="files/less/VIew/TP_1/lesson_4.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            <a href="https://docs.google.com/document/d/1wj2NNmotlvDrdgCW8hSdTW3MKl6KBJ-_/edit?usp=sharing&ouid=100420671681591998340&rtpof=true&sd=true" target="_blank" class="btn btn-view">Смотреть лекцию</a>
                         </td>
                     </tr>
 
-                    <!-- Лекция 5 -->
                     <tr>
                         <td class="num-col">№5</td>
-                        <td class="topic-col">Стандартные функции работы со строками. Основные принципы обработки текстовых данных.</td>
+                        <td class="topic-col">Практика цикла for и функции range</td>
                         <td class="actions-col" style="text-align: right;">
-                            <a href="files/less/Download/TP_1/lesson_5.docx" class="btn btn-download">DOCX</a>
-                            <a href="files/less/VIew/TP_1/lesson_5.html" target="_blank" class="btn btn-view">Смотреть</a>
-                        </td>
-                    </tr>
-
-                    <!-- Лекция 6 -->
-                    <tr>
-                        <td class="num-col">№6</td>
-                        <td class="topic-col">Функции. Передача массивов и строк. Перегрузка функций и параметры по умолчанию.</td>
-                        <td class="actions-col" style="text-align: right;">
-                            <a href="files/less/Download/TP_1/lesson_6.docx" class="btn btn-download">DOCX</a>
-                            <a href="files/less/VIew/TP_1/lesson_6.html" target="_blank" class="btn btn-view">Смотреть</a>
-                        </td>
-                    </tr>
-
-                    <!-- Лекция 7 -->
-                    <tr>
-                        <td class="num-col">№7</td>
-                        <td class="topic-col">Локальные и глобальные переменные. Конфликты областей видимости. Возможности cin/cout.</td>
-                        <td class="actions-col" style="text-align: right;">
-                            <a href="files/less/Download/TP_1/lesson_7.docx" class="btn btn-download">DOCX</a>
-                            <a href="files/less/VIew/TP_1/lesson_7.html" target="_blank" class="btn btn-view">Смотреть</a>
+                            <a href="https://docs.google.com/document/d/1CMDvOrNTKgDJSOg9_BcHXwZ6ISkxc5me/edit?usp=sharing&ouid=100420671681591998340&rtpof=true&sd=true" target="_blank" class="btn btn-view">Смотреть лекцию</a>
                         </td>
                     </tr>
                 </tbody>
